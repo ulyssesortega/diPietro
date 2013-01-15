@@ -1,0 +1,11 @@
+{
+  "name": "diPietro Todd",
+  "description": "Salon and Academy website",
+  "version": "0.1.0",
+  "dependencies": {
+      "express": "",
+      "jade": "",
+      "nib": "",
+      "stylus": ""
+  }
+}
