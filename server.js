@@ -39,7 +39,6 @@ app.configure("production", function() {
 });
 
 app.get("/", routes.index);
-app.get("/photos", routes.photos);
 app.get("*", routes.error);
 
 app.listen(config.port);

@@ -69,16 +69,80 @@ figure
    Styles by: Cameron Drake
    ========================================================================== */
 
+// Variables
+$navcolor = #ccc
+$highlightblue = #0072bc
+$dipietrofonts = 'Helvetica Neue',Helvetica,Arial,sans-serif
+
 body
-  color: #000
+  background-color: #000
   font-size: 0.75em
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+  font-family: $dipietrofonts
 
-.clear_float
-  font-size: 0px
-  line-height: 0px
-  clear: both
+.clearfix:after  
+   content: "." 
+   visibility: hidden 
+   display: block
+   height: 0
+   clear: both
 
+header
+  width: 869px
+  height: 180px
+  margin: auto
+  margin-top: 50px
+  
+#logo
+  background-image: url('../img/logo.png')
+  background-repeat: none
+
+nav
+  width: 869px
+  margin: auto
+  margin-top: 30px
+  ul
+    li
+      font: small-caps 100 24px $dipietrofonts
+      float: left
+      margin-left:40px // I need to develop a better method for centering these items
+      a
+        color: $navcolor
+        text-decoration: none
+      a:visited
+        color: $navcolor
+      a:hover
+        color: $highlightblue
+        font-size: 30px
+figure
+  background-image: url('../img/main.png')
+  width: 655px
+  height: 437px
+  margin: auto
+  margin-top:50px
+
+footer
+  width: 869px
+  height: 200px
+  margin: auto
+  margin-top: 50px
+  .feature-small
+    width: 200px
+    height: 160px
+    background-size: cover
+    float: left
+    margin-right: 134.5px
+  #feature1
+    background-image: url('../img/1.png')
+  #feature2
+    background-image: url('../img/2.png')
+  #feature3
+    background-image: url('../img/3.png')
+    margin-right: 0
+  
+
+/* =========================================================================
+   Links
+   =========================================================================*/
 a
   color: #00e
 
@@ -93,7 +157,8 @@ a:focus
 
 a:hover, a:active
   outline: 0
-  
+
+
 /* ==========================================================================
     Typography
    ========================================================================== */
