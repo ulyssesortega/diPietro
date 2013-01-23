@@ -71,8 +71,9 @@ figure
 
 // Variables
 $navcolor = #ccc
-$highlightblue = #0072bc
+$navhighlight = #666
 $dipietrofonts = 'Helvetica Neue',Helvetica,Arial,sans-serif
+$contentBlockWidth = 869px
 
 body
   background-color: #000
@@ -87,7 +88,7 @@ body
    clear: both
 
 header
-  width: 869px
+  width: $contentBlockWidth
   height: 180px
   margin: auto
   margin-top: 50px
@@ -97,7 +98,7 @@ header
   background-repeat: none
 
 nav
-  width: 869px
+  width: $contentBlockWidth
   margin: auto
   margin-top: 30px
   ul
@@ -111,17 +112,17 @@ nav
       a:visited
         color: $navcolor
       a:hover
-        color: $highlightblue
-        font-size: 30px
+        color: $navhighlight
+        text-decoration: underline
 figure
   background-image: url('../img/main.png')
   width: 655px
   height: 437px
   margin: auto
-  margin-top:50px
+  margin-top: 50px
 
 footer
-  width: 869px
+  width: $contentBlockWidth
   height: 200px
   margin: auto
   margin-top: 50px
@@ -138,7 +139,40 @@ footer
   #feature3
     background-image: url('../img/3.png')
     margin-right: 0
-  
+
+#contact
+  width: $contentBlockWidth
+  height: 700px  
+  margin: auto
+  margin-top: 50px
+  background: #fff
+  #contactform
+    float: left
+    width: ($contentBlockWidth/2)
+    margin-top: 50px
+    form
+      $formSize = 250px
+      width: $formSize
+      margin-left: 50px
+      input
+        width: $formSize
+      textarea
+        width: $formSize
+      input[type="submit"]
+        width: 40px
+  #location
+    float: right
+    width: ($contentBlockWidth/2)
+    margin-top: 50px
+    hgroup
+      width: 350px
+    .alignRight
+      float: right
+      list-style: none
+      text-align: right
+    .alignLeft
+      float: left
+
 
 /* =========================================================================
    Links
