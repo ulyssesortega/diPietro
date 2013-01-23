@@ -114,7 +114,7 @@ nav
       a:hover
         color: $navhighlight
         text-decoration: underline
-figure
+#featured
   background-image: url('../img/main.png')
   width: 655px
   height: 437px
@@ -172,6 +172,65 @@ footer
       text-align: right
     .alignLeft
       float: left
+#educators
+  width: $contentBlockWidth
+  margin: auto
+  .teachers
+    width: 275px
+    height: 275px
+    background-size: cover
+    float: left
+    margin-right: 10px
+    overflow: hidden
+    display: block
+    position: relative
+    figcaption
+      position: absolute
+      background: #000
+      color: #fff
+      opacity: 0
+      width: 100%
+      height: 75px
+      bottom: -75px
+      z-index: 1000
+      transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */
+      transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */		
+	  h2, p
+	    padding-left: 10px
+	    line-height: 1
+	    color: $navcolor
+  .teachers:hover
+    figcaption
+      opacity: 0.75
+      bottom: 0
+  #shelley
+    background-image:url('../img/teachers/shelley.jpg')
+  #amita
+    background-image:url('../img/teachers/squirrel.jpg') // Missing image for Amita
+  #cares
+    background-image:url('../img/teachers/squirrel.jpg') // Missing image for Amita
+  #akemi
+    background-image:url('../img/teachers/akemi.jpg')
+  #debi
+    background-image:url('../img/teachers/debi.jpg')  
+  #jay
+    background-image:url('../img/teachers/jay.jpg')  
+  #dawn
+    background-image:url('../img/teachers/dawn.jpg')  
+  #moises
+    background-image:url('../img/teachers/moises.jpg')  
+  #emily
+    background-image:url('../img/teachers/emily.jpg')  
+  #ali
+    background-image:url('../img/teachers/ali.jpg')  
+  #brian
+    background-image:url('../img/teachers/brian.jpg')  
+  #michelle
+    background-image:url('../img/teachers/michelle.jpg')  
+  #yureesh
+    background-image:url('../img/teachers/yureesh.jpg')  
+  #renee
+    background-image:url('../img/teachers/renee.jpg')  
 
 
 /* =========================================================================
