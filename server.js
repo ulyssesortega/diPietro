@@ -7,7 +7,7 @@ stylus = require("stylus");
 app = express();
 
 compile = function(str, path) {
-  return stylus(str).set("filename", path).set("compress", true).use(nib()).import("nib");
+  return stylus(str).set("filename", path).set("compress", false).use(nib()).import("nib");
 };
 
 app.configure(function() {
