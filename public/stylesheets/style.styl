@@ -102,26 +102,27 @@ header
 
 footer
   width: $contentBlockWidth
-  height: 200px
   margin: auto
   margin-top: 50px
-  h3
-    font: small-caps bold 34px $dipietrofonts
-    color: #fff 
-    padding: 20px 0px 0px 20px
-  .feature-small
-    width: 200px
-    height: 160px
-    background-size: cover
+  .classContainers
     float: left
-    margin-right: 134.5px
-  #feature1
-    background-image: url('../img/1.png')
-  #feature2
-    background-image: url('../img/2.png')
-  #feature3
-    background-image: url('../img/3.png')
-    margin-right: 0
+    width: ($contentBlockWidth/3)
+    text-align: center
+    h3
+      font: small-caps 24px $dipietrofonts
+      color: #fff 
+    .feature-small
+      width: 200px
+      height: 160px
+      background-size: cover
+      margin: auto
+    #feature1
+      background-image: url('../img/1.png')
+    #feature2
+      background-image: url('../img/2.png')
+    #feature3
+      background-image: url('../img/3.png')
+
 /* ======================================================================
    Contact Styles
    ======================================================================*/
@@ -166,11 +167,22 @@ footer
   margin-top: 50px
   .classCat
     display: block
-    margin: auto
     width: 683px
     height: 369px
-    margin-top: 100px
-    float: left
+    margin: auto
+    margin-top: 50px
+    h3 
+      color: #ccc
+      font: 45px $dipietrofonts
+      float: right
+    .signUp
+      color: #fff
+      background-color: #666
+      width: 250px
+      font: small-caps 24px sans-serif
+      float: right
+      margin-left:  15px
+      padding-left: 30px
   #cut
     background-image: url('../img/cut.png')
   #color

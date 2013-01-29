@@ -2,13 +2,16 @@ extends layout
 
 block content
   #featured.clearfix
-  footer.clearfix
-    h3.animated.fadeInLeft Cut
-    div.feature-small#feature1.animated.flipInX
-    h3.animated.fadeInLeft Color
-    div.feature-small#feature2.animated.flipInX
-    h3.animated.fadeInLeft Etc. 
-    div.feature-small#feature3.animated.flipInX
+  footer
+    .classContainers
+      h3 Cut
+      .feature-small#feature1
+    .classContainers
+      h3 Color
+      .feature-small#feature2
+    .classContainers.clearfix
+      h3 Etc. 
+      .feature-small#feature3
     
     
     
