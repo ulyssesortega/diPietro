@@ -3,6 +3,17 @@ script(src="js/plugins.js", type="text/javascript")
 script(src="http://code.jquery.com/jquery-latest.min.js", type="text/javascript")
 // Google Analytics 
 script
+    $(function() {
+      $("#slideshow > div:gt(0)").hide();
+      setInterval(function() {
+      $('#slideshow > div:first')
+      .fadeOut(1000)
+      .next().fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+      },  3000);
+      });
+script
   var _gaq=[['_setAccount','UA-XXXXXXXX-1'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';

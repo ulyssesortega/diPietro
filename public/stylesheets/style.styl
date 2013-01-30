@@ -93,14 +93,27 @@ header
 /* ======================================================================
    Index Styles
    ======================================================================*/
-#featured
-  background-image: url('../img/main.png')
-  width: 655px
-  height: 437px
-  margin: auto
-  margin-top: 50px
+#slideshow
+    margin: 50px auto
+    position: relative
+    width: 655px
+    height: 437px
+    padding: 10px
+    box-shadow: 0 0 20px rgba(0,0,0,0.4)
+#slideshow > div 
+    position: absolute
+    top: 10px
+    left: 10px
+    right: 10px
+    bottom: 10px
+  #first
+    background-image: url('../img/main.png')
+  #second
+    background-image: url('../img/main2.png')
+  #third
+    background-image: url('../img/main3.png')
 
-footer
+#featured
   width: $contentBlockWidth
   margin: auto
   margin-top: 50px
@@ -158,6 +171,22 @@ footer
       text-align: right
     .alignLeft
       float: left
+/* ======================================================================
+   About Styles
+   ======================================================================*/
+#aboutUs
+  width: $contentBlockWidth
+  margin: auto
+  margin-top: 50px
+  text-align: center
+  h2
+    font: italic small-caps 100 4em "Georgia"
+    color: #fff
+    margin: auto
+  p
+    font: 100 1.5em "Helvetica Neue"
+    color: #ccc
+
 /* ======================================================================
    Classes Styles
    ======================================================================*/
