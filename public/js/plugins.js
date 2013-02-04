@@ -11,7 +11,7 @@ $(document).ready(function(){
 	$('.signUp').addClass('animated rollIn');
 });      
 // Hover Animations
-$('nav > ul > li').hover(
+$('nav ul li').hover(
 	function(){$(this).addClass('animated pulse')},
 	function(){$(this).removeClass('animated pulse')}
 );
