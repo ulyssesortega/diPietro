@@ -1,7 +1,7 @@
 // SCRIPTS 
-script(src="js/plugins.js", type="text/javascript")
 script(src="http://code.jquery.com/jquery-latest.min.js", type="text/javascript")
-// Google Analytics 
+script(src="js/plugins.js", type="text/javascript")
+// Index Page Slideshow
 script
     $(function() {
       $("#slideshow > div:gt(0)").hide();
@@ -13,13 +13,13 @@ script
       .appendTo('#slideshow');
       },  3000);
       });
+//Class page animations
 script
       $(document).ready(function(){
       $('.cutTitle').addClass('animated fadeInLeft');
       $('.signUp').addClass('animated rollIn');
-      $('nav >ul >li').hover(function(){$(this).addClass('animated pulse')});
-      $('#feature1').hover(function(){$(this).addClass('animated swing')})
-      });
+      });      
+// Google Analytics 
 script
   var _gaq=[['_setAccount','UA-XXXXXXXX-1'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
