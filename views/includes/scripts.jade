@@ -14,6 +14,13 @@ script
       },  3000);
       });
 script
+      $(document).ready(function(){
+      $('.cutTitle').addClass('animated fadeInLeft');
+      $('.signUp').addClass('animated rollIn');
+      $('nav >ul >li').hover(function(){$(this).addClass('animated pulse')});
+      $('#feature1').hover(function(){$(this).addClass('animated swing')})
+      });
+script
   var _gaq=[['_setAccount','UA-XXXXXXXX-1'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';

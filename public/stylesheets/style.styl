@@ -41,18 +41,11 @@ a:focus
 a:hover, a:active
   outline: 0
 
-/* =========================================================================
-   Animation
-   =========================================================================*/
-animated(n)
-  animation-duration: n
-  animation-fill-mode: both
-
 /* ==========================================================================
    General Styles
    ========================================================================== */
 $navcolor = #ccc
-$navhighlight = #666
+$navhighlight = orange
 $dipietrofonts = 'Helvetica Neue',Helvetica,Arial,sans-serif
 $contentBlockWidth = 869px
 
@@ -87,9 +80,28 @@ header
         a:visited
           color: $navcolor
         a:hover
-          animated(1s)
           color: $navhighlight
-          text-decoration: underline
+footer
+  width: 100%
+  position: fixed
+  bottom: 0
+  height: 50px
+  background: #000
+  .footContainer
+    width: $contentBlockWidth
+    margin: auto
+    p#copy 
+      color: #ccc
+      font: small-caps 100 1.5em $dipietrofonts
+      float: left
+    ul#social
+      list-style-type: none
+      margin-top:15px
+      float: right
+      li
+        float: left
+        
+  
 /* ======================================================================
    Index Styles
    ======================================================================*/
@@ -255,7 +267,7 @@ header
 	  h2, p
 	    padding-left: 10px
 	    line-height: 1
-	    color: $navcolor
+	    color: #ccc
   .teachers:hover
     figcaption
       opacity: 0.75
