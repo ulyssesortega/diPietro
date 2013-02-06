@@ -40,11 +40,7 @@ app.configure("production", function() {
 
 app.get("/", routes.index);
 app.get("/about", routes.about);
-app.get("/saloned", routes.saloned);
 app.get("/classes", routes.classes);
-app.get("/culture", routes.culture);
-app.get("/contact", routes.contact);
-app.get("/educators", routes.educators);
 app.get("*", routes.error);
 
 app.listen(config.port);

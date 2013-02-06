@@ -47,91 +47,96 @@ a:hover, a:active
 $navcolor = #ccc
 $navhighlight = orange
 $dipietrofonts = 'Helvetica Neue',Helvetica,Arial,sans-serif
-$contentBlockWidth = 869px
+$contentBlockWidth = 60em
+$headerHeight = 11.25em
+$footerHeight = 4.375em
 
 body
   background-color: #000
-  font-size: 0.75em
+  font-size: 0.75
   font-family: $dipietrofonts
 
 header
-  width: $contentBlockWidth
-  margin: auto
-  height: auto
+  width: 100%
+  height: $headerHeight
   #logo
-    margin-top: 50px
+    width: 42.5em
+    height: 8.8125em
+    margin: auto
+    margin-top: 1.25em
     background-image: url('../img/logo.png')
+    background-size: cover
     background-repeat: none
-    height: 180px
-  
+    animation-delay: 0.5s
+.navContainer
+  width: 100%
+  height: 4em
+  position: fixed
+  top: 0
+  z-index: 100
+  background: rgba(0,0,0,1)
   nav
     width: $contentBlockWidth
     margin: auto
-    margin-top: 30px
-    ul
-      list-style-type: none
-      li
-        font: small-caps 100 24px $dipietrofonts
-        float: left
-        margin-left:40px // I need to develop a better method for centering these items
-        a
-          color: $navcolor
-          text-decoration: none
-        a:visited
-          color: $navcolor
-        a:hover
-          color: $navhighlight
-footer
-  width: 100%
-  position: fixed
-  bottom: 0
-  height: 70px
-  background: #000
-  .footContainer
-    width: $contentBlockWidth
-    margin: auto
-    p#copy 
-      color: #ccc
-      font: small-caps 100 1.25em $dipietrofonts
+    div
+      display: inline-block
+      zoom: 1
+      *display: inline
+    .col1
+      width: 20%
+      height: auto
       float: left
-      margin-top: 30px
-    ul#social
-      list-style-type: none
-      margin-top: 15px
-      float: right
-      width: 250px
-      li
-        float: left
-        width: 50px
-        height: 50px
-        margin-right: 10px
-	  #facebook
-	    background-image: url('../img/facebook.png')
-	  #twitter
-	    background-image: url('../img/twitter.png')
-	  #tumblr
-	    background-image: url('../img/tumblr.png')
-	  #hairbranded
-	    background-image: url('../img/tumblr.png')
-   
-        
-  
+      #logoSmall
+        width: 11em
+        height: 1.5em
+        margin-top: 1.25em
+        background-image: url('../img/small-logo.png')
+        background-repeat: none
+        background-size: cover
+        opacity: 1
+    .col2
+      width: 60%
+      height: auto
+      float: left
+      margin: auto
+      ul
+        list-style-type: none
+        li
+          width: 24%
+          margin: 0
+          font: small-caps 100 1.5em $dipietrofonts
+          float: left
+          animation-duration: 0.35s !important
+          text-align: justify
+          a
+            color: $navcolor
+            text-decoration: none
+          a:visited
+            color: $navcolor
+          a:hover
+            color: $navhighlight
+    .col3
+      width: 20%
+      float: left
+      height: auto
+      text-align: center
+
 /* ======================================================================
    Index Styles
    ======================================================================*/
 #slideshow
-    margin: 50px auto
-    position: relative
-    width: 655px
-    height: 437px
-    padding: 10px
-    box-shadow: 0 0 20px rgba(0,0,0,0.4)
-#slideshow > div 
+  width: 40.9375em
+  height: 26.5625em
+  margin: 4.5em auto
+  position: relative
+  padding: 0.625em
+  box-shadow: 0 0 1.25em rgba(0,0,0,0.4)
+  div 
     position: absolute
-    top: 10px
-    left: 10px
-    right: 10px
-    bottom: 10px
+    top: 0.625em
+    left: 0.625em
+    right: 0.625em
+    bottom: 0.625em
   #first
     background-image: url('../img/main.png')
   #second
@@ -142,19 +147,21 @@ footer
 #featured
   width: $contentBlockWidth
   margin: auto
-  margin-top: 50px
+  margin-top: 3.125em
   .classContainers
-    float: left
     width: ($contentBlockWidth/3)
+    float: left
     text-align: center
     h3
-      font: small-caps 24px $dipietrofonts
+      font: small-caps 1.5em $dipietrofonts
       color: #fff 
     .feature-small
-      width: 200px
-      height: 160px
+      width: 12.5em
+      height: 10em
       background-size: cover
       margin: auto
+      animation-duration: 0.75s
+      animation-delay: 0s
     #feature1
       background-image: url('../img/1.png')
     #feature2
@@ -163,143 +170,108 @@ footer
       background-image: url('../img/3.png')
 
 /* ======================================================================
-   Contact Styles
-   ======================================================================*/
-#contact
-  width: $contentBlockWidth
-  height: 700px  
-  margin: auto
-  margin-top: 50px
-  background: #fff
-  #contactform
-    float: left
-    width: ($contentBlockWidth/2)
-    margin-top: 50px
-    form
-      $formSize = 250px
-      width: $formSize
-      margin-left: 50px
-      input
-        width: $formSize
-      textarea
-        width: $formSize
-      input[type="submit"]
-        width: 40px
-  #location
-    float: right
-    width: ($contentBlockWidth/2)
-    margin-top: 50px
-    hgroup
-      width: 350px
-    .alignRight
-      float: right
-      list-style: none
-      text-align: right
-    .alignLeft
-      float: left
-/* ======================================================================
-   About Styles
-   ======================================================================*/
-#aboutUs
-  width: $contentBlockWidth
-  margin: auto
-  margin-top: 50px
-  text-align: center
-  h2
-    font: italic small-caps 100 4em "Georgia"
-    color: #fff
-    margin: auto
-  p
-    font: 100 1.5em "Helvetica Neue"
-    color: #ccc
-
-/* ======================================================================
    Classes Styles
    ======================================================================*/
 #classes
   width: $contentBlockWidth
-  margin: auto
-  margin-top: 50px
+  margin: 4.5em auto
+  padding: 4.5em 0 0 0
   .classCat
+    width: 42.6875em
+    height: 23.0625em
     display: block
-    width: 683px
-    height: 369px
-    margin: auto
-    margin-top: 50px
+    margin: 3.125em auto
     position: relative
     h3 
       color: #fff
-      font: bold 75px sans-serif
+      font: bold 4.6875em sans-serif
       position: absolute
-      top: 50px
-      right: 20px
+      right: 1.25em
     p
+      width: 15.625em
+      height: 2.1875em
       color: #fff
       background-color: rgba(255,255,255,0.3)
-      width: 250px
-      height: 35px
-      font: small-caps 24px sans-serif
+      font: small-caps 1.5em sans-serif
       float: right
       position: absolute
-      padding-left: 35px
-      bottom: 50px
-      right: 20px
+      padding-left: 2.1875em
+      bottom: 3.125em
+      right: 1.25em
   #cut
     background-image: url('../img/cut.png')
   #color
     background-image: url('../img/color.png')
   #etc
     background-image: url('../img/etc.png')
+/* ======================================================================
+   About Styles
+   ======================================================================*/
+#aboutUs
+  width: $contentBlockWidth
+  margin: auto
+  padding-top: 4.5em
+  text-align: center
+  h2
+    font: italic small-caps 100 2em "Georgia"
+    color: #fff
+  p
+    font: 100 1.0em "Helvetica Neue"
+    color: #ccc
 
 /* ======================================================================
    Educators  Styles
    ======================================================================*/
 #educators
   width: $contentBlockWidth
-  margin: auto
+  margin:auto
+  padding: 4.5em 00 4.5em
+  text-align: center
+  h2
+    font: italic small-caps 100 2em "Georgia"
+    color #fff
   .teachers
-    width: 275px
-    height: 275px
-    background-size: cover
-    float: left
-    margin-right: 10px
-    overflow: hidden
-    display: block
-    position: relative
-    margin-top: 10px
-    figcaption
-      position: absolute
-      background: #000
-      color: #fff
-      opacity: 0
-      width: 100%
-      height: 75px
-      bottom: -75px
-      z-index: 1000
-      transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */
-      transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */		
-	  h2, p
-	    padding-left: 10px
-	    line-height: 1
-	    color: #ccc
-  .teachers:hover
-    figcaption
-      opacity: 0.75
-      bottom: 0
+    width: 56em
+    margin: auto
+    figure
+      margin: 0.5em
+      width: 13em
+      height: 13em
+      background-size: cover
+      float: left
+      overflow: hidden
+      display: block
+      position: relative
+      figcaption
+        width: 100%
+        height: 4.6875em
+        position: absolute
+        background: #000
+        color: #fff
+        opacity: 0
+        bottom: -4.6875em
+        z-index: 50
+        transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */
+        transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */		
+	    h2, p
+	      padding-left: 0.625em
+          font: 100 "Helvetica Neue"
+	      line-height: 1  // fix weird spacing on this
+	      color: #ccc
+    figure:hover
+      figcaption
+        opacity: 0.75
+        bottom: -1px
   #shelley
     background-image:url('../img/teachers/shelley.jpg')
   #amita
     background-image:url('../img/teachers/squirrel.jpg') // Missing image for Amita
   #cares
     background-image:url('../img/teachers/squirrel.jpg') // Missing image for Amita
-  #akemi
-    background-image:url('../img/teachers/akemi.jpg')
   #debi
     background-image:url('../img/teachers/debi.jpg')  
   #jay
     background-image:url('../img/teachers/jay.jpg')  
-  #dawn
-    background-image:url('../img/teachers/dawn.jpg')  
   #moises
     background-image:url('../img/teachers/moises.jpg')  
   #emily
@@ -316,33 +288,73 @@ footer
     background-image:url('../img/teachers/renee.jpg')  
 
 /* ======================================================================
+   Contact Styles
+   ======================================================================*/
+#contact
+  width: 100%
+  margin: auto
+  padding-top: 4.5em
+  background: #fff
+  font-size: 0.75em
+  line-height: 1
+  #contactContainer
+    width: $contentBlockWidth
+    margin: auto
+    #contactform
+      float: left
+      width: ($contentBlockWidth/2)
+      form
+        $formSize = 15.625em
+        width: $formSize
+        input
+          width: $formSize
+        textarea
+          width: $formSize
+        input[type="submit"]
+          width: 2.5em
+    #location
+      float: right
+      width: ($contentBlockWidth/2)
+      text-align: center
+      h1
+        text-align: left
+      hgroup
+        width: 350px
+      .alignRight
+        float: right
+        list-style: none
+        text-align: right
+      .alignLeft
+        float: left
+      img
+        width: 250px
+        margin: auto
+      p#copy 
+        color: #000
+        font: small-caps 100 1em $dipietrofonts
+        float: left
+        margin-top: 1.875em
+      ul#social
+        width: 15.625em
+        list-style-type: none
+        margin-top: 1em
+        float: right
+        li
+          width: 3.125em
+          height: 3.125em
+          float: left
+          margin-right: 0.625em
+          animation-duration: 0.75s
+          animation-delay: 0s
+  	  #facebook
+  	    background-image: url('../img/facebook.png')
+  	  #twitter
+  	    background-image: url('../img/twitter.png')
+  	  #tumblr
+  	    background-image: url('../img/tumblr.png')
+  	  #hairbranded
+  	    background-image: url('../img/tumblr.png')
+
+/* ======================================================================
    Media Queries
    ======================================================================*/
-// iPad Only
-@media only screen and (device-width: 768px)
-  $contentBlockWidth: 90%
-  #featured
-    margin-top: 0px
-    width: 100%
-    height: 684px
-    background-size: cover
-  header
-    position: fixed
-    top: 0
-    background-image: linear-gradient(top, black, rgba(0,0,0,0))
-    width: 100%
-    float: left
-    #logo
-      margin-top: 15px
-      width: 300px
-      height: 45px
-      background-size: cover
-      float: left
-	nav
-	  width: $contentBlockWidth
-	  margin: auto
-	  margin-top: 30px
-	  ul
-	    li
-	      font: small-caps 100 24px $dipietrofonts
-	      margin-left: 0

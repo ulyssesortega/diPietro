@@ -1,6 +1,6 @@
 extends layout
 block content
-  #aboutUs
+  #aboutUs.clearfix
     h2 Academy
     p
       | diPietro Todd Salon first opened its doors on Post Street in San Francisco in 1988, spearheaded by the husband and wife team of Kim and Andrew Todd, along with partner, the late John diPietro. Kim directed her focus on the business side while Andrew remained on the artistic. This division of labor has proved to be successful, for in the 23 years since the launch of diPietro Todd Salon, the company has expanded throughout the Bay Area, opening a total of 5 locations thus far (Mill Valley, Palo Alto, Walnut Creek and 2 locations in SF). 
@@ -10,3 +10,83 @@ block content
       | With five locations already in the Bay Area, diPietro Todd has also launched the diPietro Todd Academy in 2004, dedicated to teaching innovative techniques and collections to stylists and colorists around the world. Led by Amita Moticka, Director of Haircutting, and Shelley Mohr, Director of Color, this educational entity conducts hands-on seminars held at diPietro Todd locations as well as other salons in the U.S. and worldwide. In an industry with few schools today, diPietro Todd has created a product that is completely unique, unrivaled, and greatly demanded. The diPietro Todd Academy explores the process of learning and the development of ideas. The Academy conducts seminars and demonstrations designed specifically to reach all aspects of cutting, color, and styling while giving students practical knowledge of the beauty industry. The Academy is built upon the understanding that creativity comes second to a strong foundation. We hope to inspire seasoned veterans of the hair industry while customizing coursework to reach different learning styles and ideas. It allows experienced stylists the opportunity to hone their skills in specifically designed workshops.
     p
       | diPietro Todd Salon prides itself on employing and training the most talented cutters and colorists in the industry. Our Creative Team, led by our multi-faceted Creative Director Akemi Tamaribuchi, keeps our style and culture alive and innovative. Ranked at the top of the beauty salon business, diPietro Todd is involved in numerous fashion shows, editorial work and photo shoots. We are the market leader for every product line carried by the company. diPietro Todd Salon originated on the cutting edge of the beauty salon industry and remains at the forefront today.
+  #educators.clearfix
+    h2 Educators
+    .teachers
+      figure#shelley
+        figcaption
+          h2 Shelley Mohr
+          p Academy Director of Color
+      figure#amita
+        figcaption
+          h2 Amita Moticka
+          p Academy Director of Cutting
+      figure#cares
+        figcaption
+          h2 Cares Mills
+          p Assistant Academy Director of Color 
+      figure#debi
+        figcaption
+          h2 Debi Alley
+          p Assistant Development Director of Cutting
+      figure#jay
+        figcaption
+          h2 Jay Chagnon
+          p Educator, Stylist
+      figure#moises
+        figcaption
+          h2 Moises Villa
+          p Assistant Creative Director
+      figure#emily
+        figcaption
+          h2 Emily Kern
+          p Educator, Colorist
+      figure#ali
+        figcaption
+          h2 Ali Salahshoor
+          p Educator, Colorist
+      figure#brian
+        figcaption
+          h2 Brian Redman
+          p Educator, Colorist
+      figure#michelle
+        figcaption
+          h2 Michelle Sandoval
+          p Educator, Colorist
+      figure#yureesh
+        figcaption
+          h2 Yureesh Hooker
+          p Educator, Stylist
+      figure#renee
+        figcaption
+          h2 Renee Dixon
+          p Educator, Stylist
+  #contact.clearfix
+    #contactContainer
+      #contactform
+        form
+          h1 Contact
+          p Your Name (required)
+          input(type='text', name='name', required)
+          p Your Email (required)
+          input(type='email', name='email', required)
+          p Subject
+          input(type='text', name='subject')
+          p your Message
+          textarea(name='message', rows='4')
+          input(type='submit', value='send')
+      #location.clearfix
+        h1 Location
+        hgroup.clearfix
+          p.alignLeft Address:
+          ul.alignRight 
+            li 177 Post St, 2nd floor
+            li San Francisco, CA 94108
+        hgroup.clearfix
+          p.alignLeft Phone
+          p.alignRight 415-693-5546
+        hgroup.clearfix
+          p.alignLeft Email
+          p.alignRight academy@dipietrotodd.com
+        a(href='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=177+Post+Street,+San+Francisco,+CA&aq=0&oq=177+post+&sll=37.7577,-122.4376&sspn=0.331962,0.307961&vpsrc=6&t=v&ie=UTF8&hq=&hnear=177+Post+St,+San+Francisco,+California+94108&z=17&iwloc=A')
+          img.clearfix(src='http://maps.googleapis.com/maps/api/staticmap?center=177+Post+St,San+Francisco,CA&zoom=16.5&size=250x250&maptype=roadmap&markers=color:blue%7Clabel:D%7C177+Post+Street,San+Francisco,CA&sensor=false')
