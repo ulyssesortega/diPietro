@@ -1,6 +1,6 @@
 server {
         listen       80;
-        server_name  dipietrotoddacademy.com;
+        server_name  wp.dipietrotoddacademy.com;
         root /usr/share/nginx/html;
         location ~ ^/(images/|img/|javascript/|js/|css/|stylesheets/|media/|static/|robots.txt|humans.txt) {
           access_log off;
@@ -17,5 +17,4 @@ server {
               proxy_http_version 1.1;
               proxy_pass http://dipietro_node;
         }
-
-    }
+}
