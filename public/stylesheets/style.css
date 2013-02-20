@@ -69,8 +69,8 @@ body {
   z-index: 1001;
 }
 #blackOverlay #underConstruction {
-  width: 70%;
-  height: 55%;
+  width: 80%;
+  height: 45%;
   margin: auto;
   margin-top: 7em;
   background-color: #ffffe0;
@@ -81,7 +81,7 @@ body {
   text-align: center;
 }
 #blackOverlay #underConstruction #constrContainer {
-  width: 75%;
+  width: 85%;
   margin: auto;
 }
 #blackOverlay #underConstruction #constrContainer h1 {
@@ -91,7 +91,7 @@ body {
 }
 #blackOverlay #underConstruction #constrContainer p {
   margin-top: 3em;
-  font: 100 2em 'Josefin Slab', serif;
+  font: 100 1.5em 'Josefin Slab', serif;
 }
 header {
   width: 100%;
@@ -514,3 +514,55 @@ header #logo {
 /* ======================================================================
    Media Queries
    ======================================================================*/
+@media (min-device-width : 768px) and (max-device-width : 1024px) {
+  #blackOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #blackOverlay #underConstruction {
+    width: 85%;
+    height: 70%;
+    margin: auto;
+    margin-top: 3em;
+  }
+  #blackOverlay #underConstruction #constrContainer {
+    width: 75%;
+    margin: auto;
+  }
+  #blackOverlay #underConstruction #constrContainer h1 {
+    font: small-caps 100 2em 'Arvo';
+    color: #222;
+    padding-top: 3.5em;
+  }
+  #blackOverlay #underConstruction #constrContainer p {
+    margin-top: 1em;
+    font: 100 1.5em 'Josefin Slab', serif;
+  }
+}
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+  #blackOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #blackOverlay #underConstruction {
+    width: 85%;
+    height: 90%;
+    margin: auto;
+    margin-top: 5%;
+  }
+  #blackOverlay #underConstruction #constrContainer {
+    width: 90%;
+    margin: auto;
+  }
+  #blackOverlay #underConstruction #constrContainer h1 {
+    font: small-caps 100 1.2em 'Arvo';
+    color: #222;
+    padding-top: 2em;
+  }
+  #blackOverlay #underConstruction #constrContainer p {
+    margin-top: 1em;
+    font: 100 1em 'Josefin Slab', serif;
+  }
+}

@@ -55,7 +55,6 @@ body
   background-color: #000
   font-size: 0.75
   font-family: $dipietrofonts
-
 #blackOverlay
   position: absolute
   top: 0
@@ -65,8 +64,8 @@ body
   background-color: rgba(0,0,0,0.75)
   z-index: 1001
   #underConstruction
-    width: 70%
-    height: 55%
+    width: 80%
+    height: 45%
     margin: auto
     margin-top: 7em
     background-color: rgba(255,255,224,1)
@@ -75,7 +74,7 @@ body
     border-radius: 25px
     text-align: center
     #constrContainer
-      width: 75%
+      width: 85%
       margin: auto
       h1
         font: small-caps 100 2em 'Arvo'
@@ -83,7 +82,7 @@ body
         padding-top: 2em
       p
         margin-top: 3em
-        font: 100 2em 'Josefin Slab', serif
+        font: 100 1.5em 'Josefin Slab', serif
 header
   width: 100%
   height: $headerHeight
@@ -386,3 +385,43 @@ header
 /* ======================================================================
    Media Queries
    ======================================================================*/
+@media (min-device-width : 768px) and (max-device-width : 1024px)
+  #blackOverlay
+    position: fixed
+    top: 0
+    left: 0
+    #underConstruction
+      width: 85%
+      height: 70%
+      margin: auto
+      margin-top: 3em
+      #constrContainer
+        width: 75%
+        margin: auto
+        h1
+          font: small-caps 100 2em 'Arvo'
+          color: #222
+          padding-top: 3.5em
+        p
+          margin-top: 1em
+          font: 100 1.5em 'Josefin Slab', serif
+@media (min-device-width : 320px) and (max-device-width : 480px) 
+  #blackOverlay
+    position: fixed
+    top: 0
+    left: 0
+    #underConstruction
+      width: 85%
+      height: 90%
+      margin: auto
+      margin-top: 5%
+      #constrContainer
+        width: 90%
+        margin: auto
+        h1
+          font: small-caps 100 1.2em 'Arvo'
+          color: #222
+          padding-top: 2em
+        p
+          margin-top: 1em
+          font: 100 1em 'Josefin Slab', serif
