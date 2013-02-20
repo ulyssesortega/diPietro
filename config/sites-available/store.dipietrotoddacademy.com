@@ -7,7 +7,7 @@ server {
 
 server {
 	      listen       80;
-	      server_name dipietrotoddacademy.com www.dipietrotoddacademy.com *.dipietrotoddacademy.com;
+	      server_name wp.dipietrotoddacademy.com;
 	      root /usr/share/nginx/wordpress;
 
 	      include global/restrictions.conf;

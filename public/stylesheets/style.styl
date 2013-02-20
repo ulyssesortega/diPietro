@@ -62,22 +62,28 @@ body
   left: 0
   width: 100%
   height: 100%
-  background-color: rgba(224,225,221,0.8)
+  background-color: rgba(0,0,0,0.75)
   z-index: 1001
-#overlayMessage
-  display: none
-  text-align: left
-  position: absolute
-  top: 1%
-  left: 23%
-  width: 50%
-  height: 700px
-  padding: 16px
-  border:   5px solid red
-  background-color: white
-  z-index: 1002
-  overflow: auto
-  -webkit-box-shadow: 0px 0px 23px 0px #000
+  #underConstruction
+    width: 70%
+    height: 55%
+    margin: auto
+    margin-top: 7em
+    background-color: rgba(255,255,224,1)
+    z-index: 1002
+    position: relative
+    border-radius: 25px
+    text-align: center
+    #constrContainer
+      width: 75%
+      margin: auto
+      h1
+        font: small-caps 100 2em 'Arvo'
+        color: #222
+        padding-top: 2em
+      p
+        margin-top: 3em
+        font: 100 2em 'Josefin Slab', serif
 header
   width: 100%
   height: $headerHeight

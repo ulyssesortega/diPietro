@@ -1,6 +1,6 @@
 server {
         listen       80;
-        server_name  wp.dipietrotoddacademy.com;
+        server_name  dipietrotoddacademy.com www.dipietrotoddacademy.com *.dipietrotoddacademy.com;
         root /usr/share/nginx/html;
         location ~ ^/(images/|img/|javascript/|js/|css/|stylesheets/|media/|static/|robots.txt|humans.txt) {
           access_log off;

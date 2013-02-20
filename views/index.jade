@@ -2,7 +2,18 @@ extends layout
 
 block content
   #blackOverlay
-  header.clearfix
+    #underConstruction
+      #constrContainer
+        h1 Our Site is Currently Under Construction!
+        p
+          | Please bear with us. For a list of 2013 Academy classes please visit 
+          |  <a href="http://www.facebook.com/photo.php?fbid=10151278176415699&set=pb.133582325698.-2207520000.1359158876&type=3&theater">facebook</a>. 
+          | Contact Kelly Nyland to sign-up at 415-693-5546 or kelly@dipietrotodd.com.
+        p
+          | In the meantime, feel free to browse our old site by clicking the logo below
+        a(href='http://wp.dipietrotoddacademy.com')
+          img(src='img/small-logo.png')
+  head  er.clearfix
     a(href='/') 
       #logo
   #slideshow.clearfix
