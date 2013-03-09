@@ -16,6 +16,26 @@ server {
 
 	      # Only include one of the files below.
 	      include global/wordpress.conf;
+	      include global/wordpress-ms-subdir-wp-super-cache.conf;
 	      #include global/wordpress-ms-subdir.conf;
 	      #include global/wordpress-ms-subdomain.conf;
+}
+server {
+              listen               443;
+              ssl                  on;
+              ssl_certificate      /usr/local/nginx/conf/server.crt;
+              ssl_certificate_key  /usr/local/nginx/conf/server.key;
+              keepalive_timeout    70;
+              server_name wp.dipietrotoddacademy.com;
+              root /usr/share/nginx/wordpress;
+
+              include global/restrictions.conf;
+
+              # Additional rules go here.
+
+              # Only include one of the files below.
+              include global/wordpress.conf;
+              #include global/wordpress-ms-subdir.conf;
+              #include global/wordpress-ms-subdomain.conf;
+
 }
