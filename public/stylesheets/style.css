@@ -205,13 +205,19 @@ header #logo {
   bottom: 0.625em;
 }
 #slideshow #first {
-  background-image: url("../img/main.png");
+  background-image: url("../img/main1.png");
 }
 #slideshow #second {
   background-image: url("../img/main2.png");
 }
 #slideshow #third {
   background-image: url("../img/main3.png");
+}
+#slideshow #fifth {
+  background-image: url("../img/main4.png");
+}
+#slideshow #fourth {
+  background-image: url("../img/main5.png");
 }
 #featured {
   width: 60em;
@@ -263,8 +269,8 @@ header #logo {
   padding: 4.5em 0 0 0;
 }
 #classes .classCat {
-  width: 42.6875em;
-  height: 23.0625em;
+  width: 40em;
+  height: 25em;
   display: block;
   margin: 3.125em auto;
   position: relative;
@@ -274,17 +280,18 @@ header #logo {
   font: bold 4.6875em sans-serif;
   position: absolute;
   right: 1.25em;
+  top: 0.2em;
 }
 #classes .classCat p {
-  width: 15.625em;
-  height: 2.1875em;
-  color: #fff;
-  background-color: rgba(255,255,255,0.3);
+  width: 12em;
+  height: 1.5em;
+  color: #222;
+  background-color: rgba(255,255,255,0.5);
   font: small-caps 1.5em sans-serif;
   float: right;
   position: absolute;
-  padding-left: 2.1875em;
-  bottom: 3.125em;
+  text-align: center;
+  bottom: 2em;
   right: 1.25em;
 }
 #classes #cut {
@@ -319,11 +326,10 @@ header #logo {
 #educators {
   width: 60em;
   margin: auto;
-  padding: 4.5em 0 4.5em;
-  text-align: center;
+  text-align: left;
 }
 #educators h2 {
-  font: italic small-caps 100 2em "Georgia";
+  font: italic small-caps 100 1.5em "Helvetica Neue";
   color: #fff;
 }
 #educators .teachers {
@@ -366,14 +372,13 @@ header #logo {
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 /* ease-in-out */
 }
-#educators .teachers h2,
-#educators .teachers p {
-  line-height: 1;
-  color: #ccc;
+#educators .teachers h2 {
+  font: 100 1.5em "Helvetica Neue";
+  margin: 0;
 }
-#educators .teachers h2 padding-left: 0.625em,
-#educators .teachers p padding-left: 0.625em {
-  font: 100 "Helvetica Neue";
+#educators .teachers p {
+  font: 100 1em "Helvetica Neue";
+  line-height: 1;
 }
 #educators .teachers figure:hover figcaption {
   opacity: 0.75;
@@ -427,6 +432,7 @@ header #logo {
   background: #fff;
   font-size: 0.75em;
   line-height: 1;
+  padding: 10em 0 10em 0;
 }
 #contact #contactContainer {
   width: 60em;

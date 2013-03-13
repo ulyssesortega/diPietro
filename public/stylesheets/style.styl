@@ -165,11 +165,15 @@ header
     right: 0.625em
     bottom: 0.625em
   #first
-    background-image: url('../img/main.png')
+    background-image: url('../img/main1.png')
   #second
     background-image: url('../img/main2.png')
   #third
     background-image: url('../img/main3.png')
+  #fifth
+    background-image: url('../img/main4.png')
+  #fourth
+    background-image: url('../img/main5.png')
 
 #featured
   width: $contentBlockWidth
@@ -204,8 +208,8 @@ header
   margin: 4.5em auto
   padding: 4.5em 0 0 0
   .classCat
-    width: 42.6875em
-    height: 23.0625em
+    width: 40em
+    height: 25em
     display: block
     margin: 3.125em auto
     position: relative
@@ -214,16 +218,17 @@ header
       font: bold 4.6875em sans-serif
       position: absolute
       right: 1.25em
+      top: 0.2em
     p
-      width: 15.625em
-      height: 2.1875em
-      color: #fff
-      background-color: rgba(255,255,255,0.3)
+      width: 12em
+      height: 1.5em
+      color: #222
+      background-color: rgba(255,255,255,0.5)
       font: small-caps 1.5em sans-serif
       float: right
       position: absolute
-      padding-left: 2.1875em
-      bottom: 3.125em
+      text-align: center
+      bottom: 2em
       right: 1.25em
   #cut
     background-image: url('../img/cut.png')
@@ -252,10 +257,9 @@ header
 #educators
   width: $contentBlockWidth
   margin:auto
-  padding: 4.5em 00 4.5em
-  text-align: center
+  text-align: left
   h2
-    font: italic small-caps 100 2em "Georgia"
+    font: italic small-caps 100 1.5em "Helvetica Neue"
     color #fff
   .teachers
     width: 56em
@@ -280,11 +284,12 @@ header
         z-index: 50
         transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */
         transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */		
-	    h2, p
-	      padding-left: 0.625em
-          font: 100 "Helvetica Neue"
-	      line-height: 1  // fix weird spacing on this
-	      color: #ccc
+	    h2
+        font: 100 1.5em "Helvetica Neue"
+        margin: 0
+      p
+        font 100 1em "Helvetica Neue"
+        line-height:1
     figure:hover
       figcaption
         opacity: 0.75
@@ -324,6 +329,7 @@ header
   background: #fff
   font-size: 0.75em
   line-height: 1
+  padding: 10em 0 10em 0
   #contactContainer
     width: $contentBlockWidth
     margin: auto

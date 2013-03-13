@@ -1,10 +1,12 @@
-var app, compile, config, express, nib, routes, stylus;
+var app, compile, config, express, nib, routes, stylus, fs, im;
 express = require("express");
 routes = require("./routes/site.js");
 config = require("./config/config.js");
 nib = require("nib");
 stylus = require("stylus");
 app = express();
+fs = require('fs');
+im = require('imagemagick');
 
 compile = function(str, path) {
   return stylus(str).set("filename", path).set("compress", false).use(nib()).import("nib");

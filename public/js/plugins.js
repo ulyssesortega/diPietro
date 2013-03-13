@@ -19,7 +19,6 @@ $(document).ready(function(){
   		});
 	
 	$('.cutTitle').addClass('animated fadeInLeft');
-	$('.signUp').addClass('animated rollIn');
 	$('#logo').addClass('animated fadeInLeft');
 	if($('header').length) {
 		$('.navContainer').css({'position': 'absolute', 'top': '180px', 'background': 'rgba(0,0,0,0)'});

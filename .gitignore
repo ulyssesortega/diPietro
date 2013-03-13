@@ -1,4 +1,6 @@
 # Read about how to use .gitignore: http://h5bp.com/ae
+Ignore the huge images directory
+/public/img/originals
 
 # Numerous always-ignore extensions
 *.diff
