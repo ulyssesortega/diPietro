@@ -158,8 +158,8 @@ header #logo {
   list-style-type: none;
 }
 .navContainer nav .col2 ul li {
-  width: 24%;
   margin: 0;
+  margin-right: 0.5em;
   font: small-caps 100 1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   float: left;
   -webkit-animation-duration: 0.35s !important;
@@ -266,7 +266,7 @@ header #logo {
 #classes {
   width: 60em;
   margin: 4.5em auto;
-  padding: 4.5em 0 0 0;
+  padding: 0;
 }
 #classes .classCat {
   width: 40em;

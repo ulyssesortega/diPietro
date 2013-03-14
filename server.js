@@ -43,6 +43,8 @@ app.configure("production", function() {
 app.get("/", routes.index);
 app.get("/about", routes.about);
 app.get("/classes", routes.classes);
+app.get("/faq", routes.faq);
+app.get("/insalon", routes.insalon);
 app.get("*", routes.error);
 
 app.listen(config.port);
