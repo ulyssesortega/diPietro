@@ -1,4 +1,4 @@
-$(window).scroll(function(e){ 
+/*$(window).scroll(function(e){ 
   $el = $('nav'); 
   if ($(this).scrollTop() > 179 && $el.css('position') != 'fixed' && $('header').length){ 
     $('.navContainer').css({'position': 'fixed', 'top': '0px', 'background': 'rgba(0,0,0,1)'});
@@ -7,7 +7,7 @@ $(window).scroll(function(e){
     $('.navContainer').css({'position': 'absolute', 'top': '180px', 'background': 'rgba(0,0,0,0)'});
     $('#logoSmall').css({'opacity': '0'});
   } 
-});
+});*/
 
 $(document).ready(function(){
 	// Index Page Slideshow
@@ -32,7 +32,7 @@ $('nav ul li').hover(
 );
 $('.feature-small').hover(
 	function(){$(this).addClass('animated tada')},
-	function(){$(this).removeClass('animated tada')}
+	function(){$(this).removeClass('animated pulse')}
 );
 $('.footerContainer footer ul li').hover(
 	function(){$(this).addClass('animated pulse')},

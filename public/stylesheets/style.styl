@@ -237,6 +237,24 @@ header
   #etc
     background-image: url('../img/etc.png')
 /* ======================================================================
+   FAQ
+   ======================================================================*/
+#FAQ
+  width: $contentBlockWidth
+  margin: auto
+  padding-top: 4.5em
+  h2
+    font: 100 2em "Josefin"
+    color: #fff
+    text-align: center
+  h3 
+    font: 100 1.2em 'Arvo'
+    color: #666
+  p
+    font: 100 1em $dipietrofonts
+    color: #fff
+    width: 40em
+/* ======================================================================
    About Styles
    ======================================================================*/
 #aboutUs
@@ -245,10 +263,10 @@ header
   padding-top: 4.5em
   text-align: center
   h2
-    font: italic small-caps 100 2em "Georgia"
+    font: italic small-caps 100 2em "Arvo"
     color: #fff
   p
-    font: 100 1.0em "Helvetica Neue"
+    font: 100 1.0em "Arvo"
     color: #ccc
 
 /* ======================================================================
@@ -256,8 +274,10 @@ header
    ======================================================================*/
 #educators
   width: $contentBlockWidth
-  margin:auto
-  text-align: left
+  margin: auto
+  padding-top: 4.5em
+  text-align: center
+  padding: 10em 0 10em 0
   h2
     font: italic small-caps 100 1.5em "Helvetica Neue"
     color #fff
@@ -326,13 +346,14 @@ header
   width: 100%
   margin: auto
   padding-top: 4.5em
-  background: #fff
   font-size: 0.75em
   line-height: 1
   padding: 10em 0 10em 0
   #contactContainer
     width: $contentBlockWidth
     margin: auto
+    background: #fff
+    height: auto
     #contactform
       float: left
       width: ($contentBlockWidth/2)

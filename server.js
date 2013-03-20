@@ -44,6 +44,8 @@ app.get("/", routes.index);
 app.get("/about", routes.about);
 app.get("/classes", routes.classes);
 app.get("/faq", routes.faq);
+app.get("/contact", routes.contact);
+app.get("/educators", routes.educators);
 app.get("/insalon", routes.insalon);
 app.get("*", routes.error);
 

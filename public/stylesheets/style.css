@@ -304,6 +304,28 @@ header #logo {
   background-image: url("../img/etc.png");
 }
 /* ======================================================================
+   FAQ
+   ======================================================================*/
+#FAQ {
+  width: 60em;
+  margin: auto;
+  padding-top: 4.5em;
+}
+#FAQ h2 {
+  font: 100 2em "Josefin";
+  color: #fff;
+  text-align: center;
+}
+#FAQ h3 {
+  font: 100 1.2em 'Arvo';
+  color: #666;
+}
+#FAQ p {
+  font: 100 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  width: 40em;
+}
+/* ======================================================================
    About Styles
    ======================================================================*/
 #aboutUs {
@@ -313,11 +335,11 @@ header #logo {
   text-align: center;
 }
 #aboutUs h2 {
-  font: italic small-caps 100 2em "Georgia";
+  font: italic small-caps 100 2em "Arvo";
   color: #fff;
 }
 #aboutUs p {
-  font: 100 1em "Helvetica Neue";
+  font: 100 1em "Arvo";
   color: #ccc;
 }
 /* ======================================================================
@@ -326,7 +348,9 @@ header #logo {
 #educators {
   width: 60em;
   margin: auto;
-  text-align: left;
+  padding-top: 4.5em;
+  text-align: center;
+  padding: 10em 0 10em 0;
 }
 #educators h2 {
   font: italic small-caps 100 1.5em "Helvetica Neue";
@@ -429,7 +453,6 @@ header #logo {
   width: 100%;
   margin: auto;
   padding-top: 4.5em;
-  background: #fff;
   font-size: 0.75em;
   line-height: 1;
   padding: 10em 0 10em 0;
@@ -437,6 +460,8 @@ header #logo {
 #contact #contactContainer {
   width: 60em;
   margin: auto;
+  background: #fff;
+  height: auto;
 }
 #contact #contactContainer #contactform {
   float: left;

@@ -1,7 +1,12 @@
 exports.index = function(req, res){  
   res.render('index');
 };
-exports.about = function(req, res){  
+exports.educators = function(req, res){
+  res.render('educators');
+};
+exports.contact = function(req, res){
+  res.render('contact');
+};exports.about = function(req, res){  
   res.render('about');
 };
 exports.classes = function(req, res){  

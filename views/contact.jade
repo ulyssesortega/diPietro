@@ -1,0 +1,33 @@
+extends layout
+block content
+ #contact.clearfix
+     #contactContainer
+       #contactform
+         form
+           h1 Contact
+           p Your Name (required)
+           input(type='text', name='name', required)
+           p Your Email (required)
+           input(type='email', name='email', required)
+           p Subject
+           input(type='text', name='subject')
+           p your Message
+           textarea(name='message', rows='4')
+           input(type='submit', value='send')
+       #location.clearfix
+         h1 Location
+         hgroup.clearfix
+           p.alignLeft Address:
+           ul.alignRight
+             li 177 Post St, 2nd floor
+             li San Francisco, CA 94108
+         hgroup.clearfix
+           p.alignLeft Phone
+           p.alignRight 415-693-5546
+         hgroup.clearfix
+           p.alignLeft Email
+           p.alignRight academy@dipietrotodd.com
+         a(href='https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=177+Post+Street,+San+Francisco,+CA&aq=0&oq=177+post+&sll=37.7577,-\
+ 122.4376&sspn=0.331962,0.307961&vpsrc=6&t=v&ie=UTF8&hq=&hnear=177+Post+St,+San+Francisco,+California+94108&z=17&iwloc=A')
+           img.clearfix(src='http://maps.googleapis.com/maps/api/staticmap?center=177+Post+St,San+Francisco,CA&zoom=16.5&size=250x250&maptype=ro\
+ admap&markers=color:blue%7Clabel:D%7C177+Post+Street,San+Francisco,CA&sensor=false')
