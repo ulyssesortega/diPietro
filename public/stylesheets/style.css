@@ -325,22 +325,64 @@ header #logo {
   color: #fff;
   width: 40em;
 }
+/* ======================================================================                                                                                                                                                                 
+   In Salon                                                                                                                                                                                                                                    
+   ======================================================================*/
+#insalon {
+  width: 60em;
+  margin: auto;
+  margin-top: 4.5em;
+  text-align: center;
+  background: url("../img/about.jpg");
+  height: 90em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+#insalon #insalon_container {
+  width: 60em;
+  height: 90em;
+  background: rgba(0,0,0,0.75);
+}
+#insalon #insalon_container h2 {
+  font: italic small-caps 100 2em "Arvo";
+  color: #fff;
+  margin: 1em;
+}
+#insalon #insalon_container p {
+  font: 100 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
+  width: 40em;
+  margin: auto;
+}
 /* ======================================================================
    About Styles
    ======================================================================*/
 #aboutUs {
   width: 60em;
   margin: auto;
-  padding-top: 4.5em;
+  margin-top: 4.5em;
   text-align: center;
+  background: url("../img/about.jpg");
+  height: 90em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
-#aboutUs h2 {
+#aboutUs #about_container {
+  width: 60em;
+  height: 90em;
+  background: rgba(0,0,0,0.75);
+}
+#aboutUs #about_container h2 {
   font: italic small-caps 100 2em "Arvo";
   color: #fff;
+  margin: 1em;
 }
-#aboutUs p {
+#aboutUs #about_container p {
   font: 100 1em "Arvo";
   color: #ccc;
+  margin: 1em;
 }
 /* ======================================================================
    Educators  Styles
@@ -414,10 +456,10 @@ header #logo {
   background-image: url("../img/teachers/shelley.jpg");
 }
 #educators #amita {
-  background-image: url("../img/teachers/squirrel.jpg");
+  background-image: url("../img/teachers/amita.jpg");
 }
 #educators #cares {
-  background-image: url("../img/teachers/squirrel.jpg");
+  background-image: url("../img/teachers/cares.jpg");
 }
 #educators #debi {
   background-image: url("../img/teachers/debi.jpg");
@@ -436,9 +478,6 @@ header #logo {
 }
 #educators #brian {
   background-image: url("../img/teachers/brian.jpg");
-}
-#educators #michelle {
-  background-image: url("../img/teachers/michelle.jpg");
 }
 #educators #yureesh {
   background-image: url("../img/teachers/yureesh.jpg");
