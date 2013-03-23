@@ -32,6 +32,9 @@ nbproject
 *.psd
 *.ai
 
+# CSS files
+public/stylesheets/*.css
+
 # Dreamweaver added files
 _notes
 dwsync.xml

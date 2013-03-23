@@ -241,41 +241,47 @@ header
    ======================================================================*/
 #FAQ
   width: $contentBlockWidth
-  margin: auto
-  padding-top: 4.5em
+  margin: 4.5em auto
+  background: url('../img/about.jpg')
+  height: 90em
+  background-size: cover
+  #faq_container
+    width: $contentBlockWidth
+    height: 90em
+    background: rgba(0,0,0,0.85)
   h2
     font: 100 2em "Josefin"
     color: #fff
     text-align: center
   h3 
     font: 100 1.2em 'Arvo'
-    color: #666
-  p
-    font: 100 1em $dipietrofonts
     color: #fff
-    width: 40em
-/* ======================================================================                                                                                                                                                                 
-   In Salon                                                                                                                                                                                                                                    
-   ======================================================================*/
+    margin: auto
+    margin-top: 1em
+    width: 45em
+  p
+    font: 200 0.9em $dipietrofonts
+    color: #ccc
+    margin: auto
+    margin-top: 1em
+    width: 45em
+/* ==================================================================== 
+  In Salon
+  ======================================================================*/
 #insalon
   width: $contentBlockWidth
-  margin: auto
-  margin-top: 4.5em
+  margin: 4.5em auto
   text-align: center
-  background: url('../img/about.jpg')
-  height: 90em
-  background-size: cover
   #insalon_container
     width: $contentBlockWidth
-    height: 90em
-    background: rgba(0,0,0,0.75)
+    background: rgba(255,255,255,0.75)
     h2
       font: italic small-caps 100 2em "Arvo"
-      color: #fff
+      color: #444
       margin: 1em
     p
-      font: 100 1em $dipietrofonts
-      color: #fff
+      font: 200 0.5em $dipietrofonts
+      color: #444
       width: 40em
       margin: auto
 /* ======================================================================
@@ -283,8 +289,7 @@ header
    ======================================================================*/
 #aboutUs
   width: $contentBlockWidth
-  margin: auto
-  margin-top: 4.5em
+  margin: 4.5em auto
   text-align: center
   background: url('../img/about.jpg')
   height: 90em
@@ -292,7 +297,7 @@ header
   #about_container
     width: $contentBlockWidth
     height: 90em
-    background: rgba(0,0,0,0.75)
+    background: rgba(0,0,0,0.85)
     h2
       font: italic small-caps 100 2em "Arvo"
       color: #fff
@@ -307,10 +312,8 @@ header
    ======================================================================*/
 #educators
   width: $contentBlockWidth
-  margin: auto
-  padding-top: 4.5em
+  margin: 4.5em auto
   text-align: center
-  padding: 10em 0 10em 0
   h2
     font: italic small-caps 100 1.5em "Helvetica Neue"
     color #fff
@@ -375,16 +378,15 @@ header
    ======================================================================*/
 #contact
   width: 100%
-  margin: auto
-  padding-top: 4.5em
+  margin: 4.5em auto
   font-size: 0.75em
   line-height: 1
   padding: 10em 0 10em 0
+  background: rgba(255,255,255,0.8)
   #contactContainer
     width: $contentBlockWidth
     margin: auto
-    background: #fff
-    height: auto
+    height: 40em
     #contactform
       float: left
       width: ($contentBlockWidth/2)
