@@ -6,8 +6,6 @@ body
   line-height: 1.4
   height: 100%
   width: 100%
-  background-image: url('../img/wood.png')
-  background-size: cover
 
 selection = #999999
 ::-moz-selection
@@ -55,6 +53,9 @@ body
   background-color: #000
   font-size: 0.75
   font-family: $dipietrofonts
+  background-image: url('../img/wood.png')
+  background-size: cover
+  background-attachment: fixed
 #blackOverlay
   position: absolute
   top: 0
@@ -210,8 +211,9 @@ header
   .classCat
     width: 40em
     height: 25em
+    margin: auto
     display: block
-    margin: 3.125em auto
+    margin: auto
     position: relative
     h3 
       color: #fff
@@ -248,7 +250,9 @@ header
   #faq_container
     width: $contentBlockWidth
     height: 90em
+    margin: auto
     background: rgba(0,0,0,0.85)
+    overflow: scroll
   h2
     font: 100 2em "Josefin"
     color: #fff
@@ -269,21 +273,34 @@ header
   In Salon
   ======================================================================*/
 #insalon
-  width: $contentBlockWidth
   margin: 4.5em auto
+  width: $contentBlockWidth
+  background: url('../img/about.jpg')
+  height: 90em
+  background-size: cover
   text-align: center
   #insalon_container
     width: $contentBlockWidth
-    background: rgba(255,255,255,0.75)
+    height: 90em
+    margin: auto
+    background: rgba(0,0,0,0.85)
+    overflow: scroll
     h2
-      font: italic small-caps 100 2em "Arvo"
-      color: #444
+      font: italic small-caps 100 2em "Josefin"
+      color: #fff
       margin: 1em
     p
-      font: 200 0.5em $dipietrofonts
-      color: #444
+      font: 200 1em $dipietrofonts
+      color: #ccc
       width: 40em
       margin: auto
+    .insalon
+      background: url('../img/insalon.png')
+      width: 40.9375em
+      height: 26.5625em
+      margin: 4.5em auto
+      position: relative
+
 /* ======================================================================
    About Styles
    ======================================================================*/
@@ -297,6 +314,7 @@ header
   #about_container
     width: $contentBlockWidth
     height: 90em
+    margin: auto
     background: rgba(0,0,0,0.85)
     h2
       font: italic small-caps 100 2em "Arvo"
@@ -311,67 +329,72 @@ header
    Educators  Styles
    ======================================================================*/
 #educators
-  width: $contentBlockWidth
-  margin: 4.5em auto
+  width: 100%
   text-align: center
-  h2
-    font: italic small-caps 100 1.5em "Helvetica Neue"
-    color #fff
-  .teachers
-    width: 56em
+  background: rgba(255,255,255,0.75)
+  margin: 4.5em auto
+  #educators_container
+    height: 50em
+    width: $contentBlockWidth
     margin: auto
-    figure
-      margin: 0.5em
-      width: 13em
-      height: 13em
-      background-size: cover
-      float: left
-      overflow: hidden
-      display: block
-      position: relative
-      figcaption
-        width: 100%
-        height: 4.6875em
-        position: absolute
-        background: #000
-        color: #fff
-        opacity: 0
-        bottom: -4.6875em
-        z-index: 50
-        transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */
-        transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */		
-	    h2
-        font: 100 1.5em "Helvetica Neue"
-        margin: 0
-      p
-        font 100 1em "Helvetica Neue"
-        line-height:1
-    figure:hover
-      figcaption
-        opacity: 0.75
-        bottom: -1px
-  #shelley
-    background-image:url('../img/teachers/shelley.jpg')
-  #amita
-    background-image:url('../img/teachers/amita.jpg')
-  #cares
-    background-image:url('../img/teachers/cares.jpg')
-  #debi
-    background-image:url('../img/teachers/debi.jpg')  
-  #jay
-    background-image:url('../img/teachers/jay.jpg')  
-  #moises
-    background-image:url('../img/teachers/moises.jpg')  
-  #emily
-    background-image:url('../img/teachers/emily.jpg')  
-  #ali
-    background-image:url('../img/teachers/ali.jpg')  
-  #brian
-    background-image:url('../img/teachers/brian.jpg')  
-  #yureesh
-    background-image:url('../img/teachers/yureesh.jpg')  
-  #renee
-    background-image:url('../img/teachers/renee.jpg')  
+    h2
+      font: italic small-caps 100 1.5em "Helvetica Neue"
+      color #fff
+    .teachers
+      width: 56em
+      margin: auto
+      figure
+        margin: 0.5em
+        width: 13em
+        height: 13em
+        background-size: cover
+        float: left
+        overflow: hidden
+        display: block
+        position: relative
+        figcaption
+          width: 100%
+          height: 4.6875em
+          position: absolute
+          background: #000
+          color: #fff
+          opacity: 0
+          bottom: -4.6875em
+          z-index: 50
+          transition: all 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */
+          transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000) /* ease-in-out */		
+  	    h2
+          font: 100 1.5em "Helvetica Neue"
+          margin: 0
+        p
+          font 100 1em "Helvetica Neue"
+          line-height:1
+      figure:hover
+        figcaption
+          opacity: 0.75
+          bottom: -1px
+    #shelley
+      background-image:url('../img/teachers_thumbs/shelley.png')
+    #amita
+      background-image:url('../img/teachers_thumbs/amita.png')
+    #cares
+      background-image:url('../img/teachers_thumbs/cares.png')
+    #debi
+      background-image:url('../img/teachers_thumbs/debi.png')  
+    #jay
+      background-image:url('../img/teachers_thumbs/jay.png')  
+    #moises
+      background-image:url('../img/teachers_thumbs/moises.png')  
+    #emily
+      background-image:url('../img/teachers_thumbs/emily.png')  
+    #ali
+      background-image:url('../img/teachers_thumbs/ali.png')  
+    #brian
+      background-image:url('../img/teachers_thumbs/brian.png')  
+    #yureesh
+      background-image:url('../img/teachers_thumbs/yureesh.png')  
+    #renee
+      background-image:url('../.png/renee.png')  
 
 /* ======================================================================
    Contact Styles
@@ -381,7 +404,6 @@ header
   margin: 4.5em auto
   font-size: 0.75em
   line-height: 1
-  padding: 10em 0 10em 0
   background: rgba(255,255,255,0.8)
   #contactContainer
     width: $contentBlockWidth

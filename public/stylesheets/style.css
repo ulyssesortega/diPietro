@@ -6,10 +6,6 @@ body {
   line-height: 1.4;
   height: 100%;
   width: 100%;
-  background-image: url("../img/wood.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
 }
 ::-moz-selection {
   background: #999;
@@ -58,6 +54,11 @@ body {
   background-color: #000;
   font-size: 0.75;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-image: url("../img/wood.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #blackOverlay {
   position: absolute;
@@ -271,8 +272,9 @@ header #logo {
 #classes .classCat {
   width: 40em;
   height: 25em;
+  margin: auto;
   display: block;
-  margin: 3.125em auto;
+  margin: auto;
   position: relative;
 }
 #classes .classCat h3 {
@@ -308,8 +310,19 @@ header #logo {
    ======================================================================*/
 #FAQ {
   width: 60em;
+  margin: 4.5em auto;
+  background: url("../img/about.jpg");
+  height: 90em;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+#FAQ #faq_container {
+  width: 60em;
+  height: 90em;
   margin: auto;
-  padding-top: 4.5em;
+  background: rgba(0,0,0,0.85);
+  overflow: scroll;
 }
 #FAQ h2 {
   font: 100 2em "Josefin";
@@ -318,50 +331,62 @@ header #logo {
 }
 #FAQ h3 {
   font: 100 1.2em 'Arvo';
-  color: #666;
+  color: #fff;
+  margin: auto;
+  margin-top: 1em;
+  width: 45em;
 }
 #FAQ p {
-  font: 100 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #fff;
-  width: 40em;
-}
-/* ======================================================================                                                                                                                                                                 
-   In Salon                                                                                                                                                                                                                                    
-   ======================================================================*/
-#insalon {
-  width: 60em;
+  font: 200 0.9em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ccc;
   margin: auto;
-  margin-top: 4.5em;
-  text-align: center;
+  margin-top: 1em;
+  width: 45em;
+}
+/* ==================================================================== 
+  In Salon
+  ======================================================================*/
+#insalon {
+  margin: 4.5em auto;
+  width: 60em;
   background: url("../img/about.jpg");
   height: 90em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  text-align: center;
 }
 #insalon #insalon_container {
   width: 60em;
   height: 90em;
-  background: rgba(0,0,0,0.75);
+  margin: auto;
+  background: rgba(0,0,0,0.85);
+  overflow: scroll;
 }
 #insalon #insalon_container h2 {
-  font: italic small-caps 100 2em "Arvo";
+  font: italic small-caps 100 2em "Josefin";
   color: #fff;
   margin: 1em;
 }
 #insalon #insalon_container p {
-  font: 100 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #fff;
+  font: 200 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #ccc;
   width: 40em;
   margin: auto;
+}
+#insalon #insalon_container .insalon {
+  background: url("../img/insalon.png");
+  width: 40.9375em;
+  height: 26.5625em;
+  margin: 4.5em auto;
+  position: relative;
 }
 /* ======================================================================
    About Styles
    ======================================================================*/
 #aboutUs {
   width: 60em;
-  margin: auto;
-  margin-top: 4.5em;
+  margin: 4.5em auto;
   text-align: center;
   background: url("../img/about.jpg");
   height: 90em;
@@ -372,7 +397,8 @@ header #logo {
 #aboutUs #about_container {
   width: 60em;
   height: 90em;
-  background: rgba(0,0,0,0.75);
+  margin: auto;
+  background: rgba(0,0,0,0.85);
 }
 #aboutUs #about_container h2 {
   font: italic small-caps 100 2em "Arvo";
@@ -388,21 +414,25 @@ header #logo {
    Educators  Styles
    ======================================================================*/
 #educators {
+  width: 100%;
+  text-align: center;
+  background: rgba(255,255,255,0.75);
+  margin: 4.5em auto;
+}
+#educators #educators_container {
+  height: 50em;
   width: 60em;
   margin: auto;
-  padding-top: 4.5em;
-  text-align: center;
-  padding: 10em 0 10em 0;
 }
-#educators h2 {
+#educators #educators_container h2 {
   font: italic small-caps 100 1.5em "Helvetica Neue";
   color: #fff;
 }
-#educators .teachers {
+#educators #educators_container .teachers {
   width: 56em;
   margin: auto;
 }
-#educators .teachers figure {
+#educators #educators_container .teachers figure {
   margin: 0.5em;
   width: 13em;
   height: 13em;
@@ -414,7 +444,7 @@ header #logo {
   display: block;
   position: relative;
 }
-#educators .teachers figure figcaption {
+#educators #educators_container .teachers figure figcaption {
   width: 100%;
   height: 4.6875em;
   position: absolute;
@@ -438,69 +468,67 @@ header #logo {
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 /* ease-in-out */
 }
-#educators .teachers h2 {
+#educators #educators_container .teachers h2 {
   font: 100 1.5em "Helvetica Neue";
   margin: 0;
 }
-#educators .teachers p {
+#educators #educators_container .teachers p {
   font: 100 1em "Helvetica Neue";
   line-height: 1;
 }
-#educators .teachers figure:hover figcaption {
+#educators #educators_container .teachers figure:hover figcaption {
   opacity: 0.75;
   filter: alpha(opacity=75);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   bottom: -1px;
 }
-#educators #shelley {
-  background-image: url("../img/teachers/shelley.jpg");
+#educators #educators_container #shelley {
+  background-image: url("../img/teachers_thumbs/shelley.png");
 }
-#educators #amita {
-  background-image: url("../img/teachers/amita.jpg");
+#educators #educators_container #amita {
+  background-image: url("../img/teachers_thumbs/amita.png");
 }
-#educators #cares {
-  background-image: url("../img/teachers/cares.jpg");
+#educators #educators_container #cares {
+  background-image: url("../img/teachers_thumbs/cares.png");
 }
-#educators #debi {
-  background-image: url("../img/teachers/debi.jpg");
+#educators #educators_container #debi {
+  background-image: url("../img/teachers_thumbs/debi.png");
 }
-#educators #jay {
-  background-image: url("../img/teachers/jay.jpg");
+#educators #educators_container #jay {
+  background-image: url("../img/teachers_thumbs/jay.png");
 }
-#educators #moises {
-  background-image: url("../img/teachers/moises.jpg");
+#educators #educators_container #moises {
+  background-image: url("../img/teachers_thumbs/moises.png");
 }
-#educators #emily {
-  background-image: url("../img/teachers/emily.jpg");
+#educators #educators_container #emily {
+  background-image: url("../img/teachers_thumbs/emily.png");
 }
-#educators #ali {
-  background-image: url("../img/teachers/ali.jpg");
+#educators #educators_container #ali {
+  background-image: url("../img/teachers_thumbs/ali.png");
 }
-#educators #brian {
-  background-image: url("../img/teachers/brian.jpg");
+#educators #educators_container #brian {
+  background-image: url("../img/teachers_thumbs/brian.png");
 }
-#educators #yureesh {
-  background-image: url("../img/teachers/yureesh.jpg");
+#educators #educators_container #yureesh {
+  background-image: url("../img/teachers_thumbs/yureesh.png");
 }
-#educators #renee {
-  background-image: url("../img/teachers/renee.jpg");
+#educators #educators_container #renee {
+  background-image: url("../.png/renee.png");
 }
 /* ======================================================================
    Contact Styles
    ======================================================================*/
 #contact {
   width: 100%;
-  margin: auto;
-  padding-top: 4.5em;
+  margin: 4.5em auto;
   font-size: 0.75em;
   line-height: 1;
-  padding: 10em 0 10em 0;
+  background: rgba(255,255,255,0.8);
 }
 #contact #contactContainer {
   width: 60em;
   margin: auto;
-  background: #fff;
-  height: auto;
+  height: 40em;
 }
 #contact #contactContainer #contactform {
   float: left;
