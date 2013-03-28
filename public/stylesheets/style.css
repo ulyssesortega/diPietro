@@ -100,7 +100,7 @@ header {
 }
 header #logo {
   width: 42.5em;
-  height: 8.8125em;
+  height: 9.6em;
   margin: auto;
   margin-top: 1.25em;
   background-image: url("../img/logo.png");
@@ -114,6 +114,9 @@ header #logo {
   -ms-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
 .navContainer {
   width: 100%;
   height: 4em;
@@ -161,7 +164,7 @@ header #logo {
 .navContainer nav .col2 ul li {
   margin: 0;
   margin-right: 0.5em;
-  font: small-caps 100 1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: small-caps 200 1.5em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   float: left;
   -webkit-animation-duration: 0.35s !important;
   -moz-animation-duration: 0.35s !important;
@@ -253,13 +256,13 @@ header #logo {
   animation-delay: 0s;
 }
 #featured .classContainers #feature1 {
-  background-image: url("../img/1.png");
+  background-image: url("../img/cut_thumb.png");
 }
 #featured .classContainers #feature2 {
-  background-image: url("../img/2.png");
+  background-image: url("../img/color_thumb.png");
 }
 #featured .classContainers #feature3 {
-  background-image: url("../img/3.png");
+  background-image: url("../img/etc_thumb.png");
 }
 /* ======================================================================
    Classes Styles
@@ -274,8 +277,8 @@ header #logo {
   height: 25em;
   margin: auto;
   display: block;
-  margin: auto;
   position: relative;
+  margin-bottom: 1em;
 }
 #classes .classCat h3 {
   color: #fff;
@@ -311,13 +314,14 @@ header #logo {
 #FAQ {
   width: 60em;
   margin: 4.5em auto;
+  text-align: center;
   background: url("../img/about.jpg");
   height: 90em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
 }
-#FAQ #faq_container {
+#FAQ .container {
   width: 60em;
   height: 90em;
   margin: auto;
@@ -347,34 +351,34 @@ header #logo {
   In Salon
   ======================================================================*/
 #insalon {
-  margin: 4.5em auto;
   width: 60em;
+  margin: 4.5em auto;
+  text-align: center;
   background: url("../img/about.jpg");
   height: 90em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  text-align: center;
 }
-#insalon #insalon_container {
+#insalon .container {
   width: 60em;
   height: 90em;
   margin: auto;
   background: rgba(0,0,0,0.85);
   overflow: scroll;
 }
-#insalon #insalon_container h2 {
+#insalon h2 {
   font: italic small-caps 100 2em "Josefin";
   color: #fff;
   margin: 1em;
 }
-#insalon #insalon_container p {
+#insalon p {
   font: 200 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #ccc;
   width: 40em;
   margin: auto;
 }
-#insalon #insalon_container .insalon {
+#insalon .insalon {
   background: url("../img/insalon.png");
   width: 40.9375em;
   height: 26.5625em;
@@ -394,18 +398,19 @@ header #logo {
   -moz-background-size: cover;
   background-size: cover;
 }
-#aboutUs #about_container {
+#aboutUs .container {
   width: 60em;
   height: 90em;
   margin: auto;
   background: rgba(0,0,0,0.85);
+  overflow: scroll;
 }
-#aboutUs #about_container h2 {
+#aboutUs h2 {
   font: italic small-caps 100 2em "Arvo";
   color: #fff;
   margin: 1em;
 }
-#aboutUs #about_container p {
+#aboutUs p {
   font: 100 1em "Arvo";
   color: #ccc;
   margin: 1em;
@@ -419,20 +424,16 @@ header #logo {
   background: rgba(255,255,255,0.75);
   margin: 4.5em auto;
 }
-#educators #educators_container {
+#educators .container {
   height: 50em;
   width: 60em;
   margin: auto;
 }
-#educators #educators_container h2 {
+#educators h2 {
   font: italic small-caps 100 1.5em "Helvetica Neue";
   color: #fff;
 }
-#educators #educators_container .teachers {
-  width: 56em;
-  margin: auto;
-}
-#educators #educators_container .teachers figure {
+#educators figure {
   margin: 0.5em;
   width: 13em;
   height: 13em;
@@ -444,7 +445,7 @@ header #logo {
   display: block;
   position: relative;
 }
-#educators #educators_container .teachers figure figcaption {
+#educators figure figcaption {
   width: 100%;
   height: 4.6875em;
   position: absolute;
@@ -468,51 +469,51 @@ header #logo {
   transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
 /* ease-in-out */
 }
-#educators #educators_container .teachers h2 {
+#educators h2 {
   font: 100 1.5em "Helvetica Neue";
   margin: 0;
 }
-#educators #educators_container .teachers p {
+#educators p {
   font: 100 1em "Helvetica Neue";
   line-height: 1;
 }
-#educators #educators_container .teachers figure:hover figcaption {
+#educators figure:hover figcaption {
   opacity: 0.75;
   filter: alpha(opacity=75);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   bottom: -1px;
 }
-#educators #educators_container #shelley {
+#educators #shelley {
   background-image: url("../img/teachers_thumbs/shelley.png");
 }
-#educators #educators_container #amita {
+#educators #amita {
   background-image: url("../img/teachers_thumbs/amita.png");
 }
-#educators #educators_container #cares {
+#educators #cares {
   background-image: url("../img/teachers_thumbs/cares.png");
 }
-#educators #educators_container #debi {
+#educators #debi {
   background-image: url("../img/teachers_thumbs/debi.png");
 }
-#educators #educators_container #jay {
+#educators #jay {
   background-image: url("../img/teachers_thumbs/jay.png");
 }
-#educators #educators_container #moises {
+#educators #moises {
   background-image: url("../img/teachers_thumbs/moises.png");
 }
-#educators #educators_container #emily {
+#educators #emily {
   background-image: url("../img/teachers_thumbs/emily.png");
 }
-#educators #educators_container #ali {
+#educators #ali {
   background-image: url("../img/teachers_thumbs/ali.png");
 }
-#educators #educators_container #brian {
+#educators #brian {
   background-image: url("../img/teachers_thumbs/brian.png");
 }
-#educators #educators_container #yureesh {
+#educators #yureesh {
   background-image: url("../img/teachers_thumbs/yureesh.png");
 }
-#educators #educators_container #renee {
+#educators #renee {
   background-image: url("../.png/renee.png");
 }
 /* ======================================================================
@@ -520,94 +521,59 @@ header #logo {
    ======================================================================*/
 #contact {
   width: 100%;
+  text-align: center;
+  background: rgba(255,255,255,0.75);
   margin: 4.5em auto;
-  font-size: 0.75em;
-  line-height: 1;
-  background: rgba(255,255,255,0.8);
 }
-#contact #contactContainer {
+#contact .container {
+  height: 50em;
   width: 60em;
   margin: auto;
-  height: 40em;
 }
-#contact #contactContainer #contactform {
+#contact #contactform {
   float: left;
   width: 30em;
 }
-#contact #contactContainer #contactform form {
+#contact #contactform form {
   width: 15.625em;
 }
-#contact #contactContainer #contactform form input {
+#contact #contactform form input {
   width: 15.625em;
 }
-#contact #contactContainer #contactform form textarea {
+#contact #contactform form textarea {
   width: 15.625em;
 }
-#contact #contactContainer #contactform form input[type="submit"] {
+#contact #contactform form input[type="submit"] {
   width: 2.5em;
 }
-#contact #contactContainer #location {
+#contact #location {
   float: right;
   width: 30em;
   text-align: center;
 }
-#contact #contactContainer #location h1 {
+#contact #location h1 {
   text-align: left;
 }
-#contact #contactContainer #location hgroup {
+#contact #location hgroup {
   width: 350px;
 }
-#contact #contactContainer #location .alignRight {
+#contact #location .alignRight {
   float: right;
   list-style: none;
   text-align: right;
 }
-#contact #contactContainer #location .alignLeft {
+#contact #location .alignLeft {
   float: left;
 }
-#contact #contactContainer #location img {
+#contact #location img {
   width: 250px;
   margin: auto;
 }
-#contact #contactContainer #location p#copy {
+#contact #location p#copy {
   color: #000;
   font: small-caps 100 1em 'Helvetica Neue', Helvetica, Arial, sans-serif;
   float: left;
   margin-top: 1.875em;
-}
-#contact #contactContainer #location ul#social {
-  width: 15.625em;
-  list-style-type: none;
-  margin-top: 1em;
-  float: right;
-}
-#contact #contactContainer #location ul#social li {
-  width: 3.125em;
-  height: 3.125em;
-  float: left;
-  margin-right: 0.625em;
-  -webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  -o-animation-duration: 0.75s;
-  -ms-animation-duration: 0.75s;
-  animation-duration: 0.75s;
-  -webkit-animation-delay: 0s;
-  -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  animation-delay: 0s;
-}
-#contact #contactContainer #facebook {
-  background-image: url("../img/facebook.png");
-}
-#contact #contactContainer #twitter {
-  background-image: url("../img/twitter.png");
-}
-#contact #contactContainer #tumblr {
-  background-image: url("../img/tumblr.png");
-}
-#contact #contactContainer #hairbranded {
-  background-image: url("../img/tumblr.png");
 }
 /* ======================================================================
    Media Queries
