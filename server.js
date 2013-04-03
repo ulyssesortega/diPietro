@@ -47,6 +47,9 @@ app.get("/faq", routes.faq);
 app.get("/contact", routes.contact);
 app.get("/educators", routes.educators);
 app.get("/insalon", routes.insalon);
+app.get("/cut", routes.cut);
+app.get("/etc", routes.etc);
+app.get("/color", routes.color);
 app.get("*", routes.error);
 
 app.listen(config.port);
