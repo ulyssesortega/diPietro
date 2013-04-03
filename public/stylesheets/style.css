@@ -22,7 +22,7 @@ header #logo{width:42.5em;height:9.6em;margin:auto;margin-top:1.25em;background-
 .navContainer nav ul li a{color:#ccc;text-decoration:none}
 .navContainer nav ul li a:visited{color:#ccc}
 .navContainer nav ul li a:hover{color:#37b0e6}
-#slideshow{width:40.9375em;height:26.5625em;margin:4.5em auto;position:relative;padding:.625em;box-shadow:0 0 1.25em rgba(0,0,0,0.4);}
+#slideshow{width:40.9375em;height:26.5625em;margin:auto;position:relative;padding:.625em;box-shadow:0 0 1.25em rgba(0,0,0,0.4);}
 #slideshow div{position:absolute;top:.625em;left:.625em;right:.625em;bottom:.625em}
 #slideshow #first{background-image:url("../img/main1.png")}
 #slideshow #second{background-image:url("../img/main2.png")}
@@ -36,28 +36,28 @@ header #logo{width:42.5em;height:9.6em;margin:auto;margin-top:1.25em;background-
 #featured .classContainers #feature1{background-image:url("../img/cut_thumb.png")}
 #featured .classContainers #feature2{background-image:url("../img/color_thumb.png")}
 #featured .classContainers #feature3{background-image:url("../img/etc_thumb.png")}
-#classes{width:60em;margin:4.5em auto;padding:0;}
+#classes{width:60em;margin:auto;padding:0;}
 #classes .classCat{width:40em;height:25em;margin:auto;display:block;position:relative;margin-bottom:1em;}
 #classes .classCat h3{color:#fff;font:bold 4.6875em sans-serif;position:absolute;right:1.25em;top:.2em}
 #classes .classCat p{width:12em;height:1.5em;color:#222;background-color:rgba(255,255,255,0.5);font:small-caps 1.5em sans-serif;float:right;position:absolute;text-align:center;bottom:2em;right:1.25em}
 #classes #cut{background-image:url("../img/cut.png")}
 #classes #color{background-image:url("../img/color.png")}
 #classes #etc{background-image:url("../img/etc.png")}
-#FAQ{width:60em;margin:4.5em auto;text-align:center;background:url("../img/about.jpg");height:90em;background-size:cover;}
+#FAQ{width:60em;margin:auto;text-align:center;background:url("../img/about.jpg");height:90em;background-size:cover;}
 #FAQ .container{width:60em;height:90em;margin:auto;background:rgba(0,0,0,0.85);overflow:scroll}
 #FAQ h2{font:100 2em "Josefin";color:#fff;text-align:center}
 #FAQ h3{font:100 1.2em 'Arvo';color:#fff;margin:auto;margin-top:1em;width:45em}
 #FAQ p{font:200 .9em 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#ccc;margin:auto;margin-top:1em;width:45em}
-#insalon{width:60em;margin:4.5em auto;text-align:center;background:url("../img/about.jpg");height:90em;background-size:cover;}
+#insalon{width:60em;margin:auto;text-align:center;background:url("../img/about.jpg");height:90em;background-size:cover;}
 #insalon .container{width:60em;height:90em;margin:auto;background:rgba(0,0,0,0.85);overflow:scroll}
 #insalon h2{font:italic small-caps 100 2em "Josefin";color:#fff;margin:1em}
 #insalon p{font:200 1em 'Helvetica Neue',Helvetica,Arial,sans-serif;color:#ccc;width:40em;margin:auto}
-#insalon .insalon{background:url("../img/insalon.png");width:40.9375em;height:26.5625em;margin:4.5em auto;position:relative}
-#aboutUs{width:60em;margin:4.5em auto;text-align:center;background:url("../img/about.jpg");height:90em;background-size:cover;}
+#insalon .insalon{background:url("../img/insalon.png");width:40.9375em;height:26.5625em;margin:auto;position:relative}
+#aboutUs{width:60em;margin:auto;text-align:center;background:url("../img/about.jpg");height:90em;background-size:cover;}
 #aboutUs .container{width:60em;height:90em;margin:auto;background:rgba(0,0,0,0.85);overflow:scroll}
 #aboutUs h2{font:italic small-caps 100 2em "Arvo";color:#fff;margin:1em}
 #aboutUs p{font:100 1em "Arvo";color:#ccc;margin:1em}
-#educators{width:100%;text-align:center;background:rgba(255,255,255,0.75);margin:4.5em auto;}
+#educators{width:100%;text-align:center;background:rgba(255,255,255,0.75);margin:auto;}
 #educators .container{height:50em;width:60em;margin:auto}
 #educators h2{font:italic small-caps 100 1.5em "Helvetica Neue";color:#000}
 #educators figure{margin:.5em;width:13em;height:13em;background-size:cover;float:left;overflow:hidden;display:block;position:relative;}
@@ -76,7 +76,7 @@ header #logo{width:42.5em;height:9.6em;margin:auto;margin-top:1.25em;background-
 #educators #brian{background-image:url("../img/teachers_thumbs/brian.png")}
 #educators #yureesh{background-image:url("../img/teachers_thumbs/yureesh.png")}
 #educators #renee{background-image:url("../img/teachers_thumbs/renee.png")}
-#contact{width:100%;text-align:center;background:rgba(255,255,255,0.75);margin:4.5em auto;}
+#contact{width:100%;text-align:center;background:rgba(255,255,255,0.75);margin:auto;}
 #contact .container{height:50em;width:60em;margin:auto}
 #contact #contactform{float:left;width:30em;}
 #contact #contactform form{width:15.625em;}
