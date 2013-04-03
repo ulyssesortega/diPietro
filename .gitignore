@@ -33,7 +33,7 @@ nbproject
 *.ai
 
 # CSS files
-public/stylesheets/*.css
+public/stylesheets/style.css
 
 # Dreamweaver added files
 _notes
