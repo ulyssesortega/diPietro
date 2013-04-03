@@ -50,6 +50,7 @@ $headerHeight = 11.25em
 $footerHeight = 4.375em
 @font-face { font-family: Blair; src: url('../343.ttf'); } 
 
+// General Background Mixins
 pictureBackground(n)
   width: $contentBlockWidth
   margin: auto
@@ -72,7 +73,6 @@ whiteBackground(n)
     height: n
     width: $contentBlockWidth
     margin: auto
-  
 body
   background-color: #000
   font-size: 0.75
@@ -276,12 +276,64 @@ header
       height: 26.5625em
       margin: auto
       position: relative
+/* ==========================================================================
+   Class Mixin
+   ========================================================================== */    
+classBackground(n)
+  width: $contentBlockWidth
+  margin: auto
+  text-align: center
+  background: url(n)
+  height: 90em
+  background-size: cover
+  .container
+    width: $contentBlockWidth
+    height: 90em
+    margin: auto
+    background: rgba(0,0,0,0.85)
+    overflow: scroll
+    .classes
+      clearfix()
+      margin: 0.5em auto
+      width: 800px
+      .thumbs
+        width: 200px
+        height: 300px
+        background: rgba(255,255,255,0.6)
+        float: left
+      .details
+        width: 35em
+        float: left
+        margin: 0 0 0 1em
+        text-align: left
+        h1
+          color: #fff
+          font: 100 2em $dipietrofonts
+        h2
+          color: #666
+          font: italic small-caps 100 1.1em "Josefin"
+        p
+          color: #ccc
+          font 100 1em $dipietrofonts
+        h3
+          color: #666
+  
+/* =========================================================================
+   Cut
+   =========================================================================*/           
+#cut
+    classBackground('../img/about.jpg')
 /* =========================================================================
    Color
    =========================================================================*/           
 #color
-  colo
-
+    classBackground('../img/about.jpg')
+/* =========================================================================
+   Etc
+   =========================================================================*/           
+#etc
+    classBackground('../img/about.jpg')
+    
 /* ======================================================================
    About Styles
    ======================================================================*/
