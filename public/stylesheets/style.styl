@@ -154,7 +154,6 @@ header
   height: 26.5625em
   margin: auto
   position: relative
-  padding: 0.625em
   box-shadow: 0 0 1.25em rgba(0,0,0,0.4)
   div 
     position: absolute
@@ -176,7 +175,6 @@ header
 #featured
   width: $contentBlockWidth
   margin: auto
-  margin-top: 3.125em
   .classContainers
     width: ($contentBlockWidth/3)
     float: left
@@ -299,7 +297,6 @@ classBackground(n)
       .thumbs
         width: 200px
         height: 300px
-        background: rgba(255,255,255,0.6)
         float: left
       .details
         width: 35em
@@ -317,32 +314,28 @@ classBackground(n)
           font 100 1em $dipietrofonts
         h3
           color: #666
-  
-/* =========================================================================
-   Cut
-   =========================================================================*/           
+// CUT
 #cut
     classBackground('../img/about.jpg')
-/* =========================================================================
-   Color
-   =========================================================================*/           
+// COLOR
 #color
     classBackground('../img/about.jpg')
-/* =========================================================================
-   Etc
-   =========================================================================*/           
+// ETC
 #etc
-    classBackground('../img/about.jpg')
+    classBackground('../img/about.jpg') // TODO: format that image
     
 /* ======================================================================
    About Styles
    ======================================================================*/
 #aboutUs
     pictureBackground(90em)
+    img
+      float: left
+      margin: 0 1em
     h2
       font: italic small-caps 100 2em "Arvo"
       color: #fff
-      margin: 1em
+      margin: 1em 
     p
       font: 100 1.0em "Arvo"
       color: #ccc
