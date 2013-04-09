@@ -1,0 +1,21 @@
+img(id="shopping", src="img/shoppingcart.png", width="52", alt="")
+#fade.blackOverlay(style="display:none")
+  #checkout
+    #xbutton
+    h1 Review You Shopping Cart
+    #shoppingCart
+      .simpleCart_items
+      span#simpleCart_total.simpleCart_total
+      span#simpleCart_taxRate.simpleCart_taxRate
+      span#simpleCart_tax.simpleCart_tax 
+      span#simpleCart_shipping.simpleCart_shipping
+      #simpleCart_grandTotal.simpleCart_grandTotal
+      a.simpleCart_checkout(href="javascript:;")checkout
+    form(action="", method="get")
+      input(name="First Last Name", placeholder="First Last Name")
+      input(name="Address Line 1", placeholder="Address Line 1")
+      input(name="Address Line 2", placeholder="Address Line 2")
+      input(name="city", placeholder="City")
+      input(name="state", placeholder="State", max="2")
+      input(name="zip", placeholder="Zip Code", max="5")
+      input(type="submit", value="submit")

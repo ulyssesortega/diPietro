@@ -9,7 +9,14 @@ $(document).ready(function(){
 	
 	$('.cutTitle').addClass('animated fadeInLeft');
 	$('#logo').addClass('animated fadeInLeft');
-});      
+});
+// Shopping Cart toggle
+$('#shopping').bind('click', function(){
+  $('#fade').fadeIn(1000)
+});
+$('#xbutton').bind('click', function(){
+  $('#fade').fadeOut(1000)
+});
 // Hover Animations
 $('nav ul li').hover(
 	function(){$(this).addClass('animated pulse')},

@@ -79,7 +79,7 @@ body
   background-image: url('../img/wood.png')
   background-size: cover
   background-attachment: fixed
-#blackOverlay
+.blackOverlay
   position: absolute
   top: 0
   left: 0
@@ -87,7 +87,7 @@ body
   height: 100%
   background-color: rgba(0,0,0,0.75)
   z-index: 1001
-  #underConstruction
+  .light
     width: 80%
     height: 45%
     margin: auto
@@ -107,6 +107,20 @@ body
       p
         margin-top: 3em
         font: 100 1.5em 'Josefin Slab', serif
+        
+#xbutton
+  width: 2em
+  height: 2em
+  position: absolute
+  top: -1%
+  right: -1%
+  background: url('../img/x-button.png') no-repeat
+  background-size: cover
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  z-index:  1009
+
 header
   width: 100%
   height: $headerHeight
@@ -290,6 +304,32 @@ classBackground(n)
     margin: auto
     background: rgba(0,0,0,0.85)
     overflow: scroll
+    #fade
+      #checkout
+        width: 80%
+        background: rgba(255,255,255,0.75)
+        height: 80%
+        margin: auto
+        margin-top: 7em
+        background-color: rgba(255,255,224,1)
+        z-index: 1002
+        position: relative
+        border-radius: 25px
+        text-align: center
+        h1
+          font: small-caps 100 2em 'Arvo'
+          color: #222
+          padding-top: 2em
+        #shoppingCart
+          width: 30em
+          float: left
+          height: 1em
+        form
+          width: 30em
+          float: left
+          input
+            margin-top: 1em
+            width: 18em
     .classes
       margin: 0.5em auto
       width: 800px
@@ -314,6 +354,8 @@ classBackground(n)
           font 100 1em $dipietrofonts
         h3
           color: #666
+.headerRow
+  float: left
 // CUT
 #cut
     classBackground('../img/about.jpg')
@@ -444,7 +486,7 @@ classBackground(n)
    Media Queries
    ======================================================================*/
 @media (min-device-width : 768px) and (max-device-width : 1024px)
-  #blackOverlay
+  .blackOverlay
     position: fixed
     top: 0
     left: 0
@@ -464,7 +506,7 @@ classBackground(n)
           margin-top: 1em
           font: 100 1.5em 'Josefin Slab', serif
 @media (min-device-width : 320px) and (max-device-width : 480px) 
-  #blackOverlay
+  .blackOverlay
     position: fixed
     top: 0
     left: 0

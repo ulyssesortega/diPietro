@@ -1,9 +1,18 @@
 // SCRIPTS 
 script(src="http://code.jquery.com/jquery-latest.min.js", type="text/javascript")
 script(src="js/plugins.js", type="text/javascript")
+script(src="js/libs/simpleCart.js", type="text/javascript")
+
 // Google Analytics 
 script
   var _gaq=[['_setAccount','UA-XXXXXXXX-1'],['_trackPageview']];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
   g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
   s.parentNode.insertBefore(g,s)}(document,'script'));
+script
+    simpleCart({
+      checkout: {
+      type: "PayPal" ,
+      email: "you@yours.com"
+      }
+      });
