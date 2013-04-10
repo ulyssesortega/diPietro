@@ -80,7 +80,7 @@ body
   background-size: cover
   background-attachment: fixed
 .blackOverlay
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   width: 100%
@@ -120,7 +120,10 @@ body
   -moz-background-size: cover
   -o-background-size: cover
   z-index:  1009
-
+#shopping
+  position: fixed
+  top: 1%
+  right: 1%
 header
   width: 100%
   height: $headerHeight
@@ -291,6 +294,7 @@ header
 /* ==========================================================================
    Class Mixin
    ========================================================================== */    
+$checkoutWidth = 600px
 classBackground(n)
   width: $contentBlockWidth
   margin: auto
@@ -303,7 +307,6 @@ classBackground(n)
     height: 90em
     margin: auto
     background: rgba(0,0,0,0.85)
-    overflow: scroll
     #fade
       #checkout
         width: 80%
@@ -321,7 +324,7 @@ classBackground(n)
           color: #222
           padding-top: 2em
         #shoppingCart
-          width: 30em
+          width: $checkoutWidth
           float: left
           height: 1em
         form
@@ -354,8 +357,39 @@ classBackground(n)
           font 100 1em $dipietrofonts
         h3
           color: #666
+.item-name
+  width: 65%
+.item-price
+  width: 25%
+.item-quantity
+  width: 10%
+.item-total
+  display: none
 .headerRow
+  width: $checkoutWidth
+  height: 2em
+  text-align: left
+  div
+    float: left
+.itemRow
+  width: $checkoutWidth
+  div
+    float:left
+    text-align: left
+.simpleCart_decrement, .simpleCart_increment, .simpleCart_remove
+  display: none
+.cartFiller
+  width: 65%
   float: left
+  height: 1em
+.simpleCart_total
+  width: 25%
+  float: left
+  text-align: left
+.simpleCart_grandTotal
+  width: 25%
+  float: left
+  text-align: left
 // CUT
 #cut
     classBackground('../img/about.jpg')

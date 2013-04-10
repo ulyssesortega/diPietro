@@ -17,6 +17,9 @@ $('#shopping').bind('click', function(){
 $('#xbutton').bind('click', function(){
   $('#fade').fadeOut(1000)
 });
+$('.item_add').click(
+  function(){$('#shopping').addClass('animated tada')}
+);
 // Hover Animations
 $('nav ul li').hover(
 	function(){$(this).addClass('animated pulse')},
