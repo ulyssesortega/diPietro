@@ -72,6 +72,14 @@ header
   position: fixed
   top: 1%
   right: 1%
+.social
+  position: fixed
+  bottom: 1%
+  left: 1%
+  width: 20em
+  a
+    float: left
+    margin-left: 1em
 pictureBackground(n)
   width: $contentBlockWidth
   margin: auto
@@ -306,9 +314,9 @@ classBackground()
     background: rgba(0,0,0,0.85)
     #fade
       #checkout
-        width: 80%
+        width: 90%
         background: rgba(255,255,255,0.75)
-        height: 80%
+        height: 65%
         margin: auto
         margin-top: 7em
         background-color: rgba(255,255,224,1)
@@ -321,11 +329,12 @@ classBackground()
           color: #222
           padding-top: 2em
         #shoppingCart
-          width: $checkoutWidth
+          width: 63%
+          margin-left: 2%
           float: left
           height: 1em
         form
-          width: 30em
+          width: 35%
           float: left
           input
             margin-top: 1em
@@ -369,6 +378,22 @@ classBackground()
 /* ======================================================================
    Shopping Cart
    ======================================================================*/
+.simpleCart_items table
+  border: 1px solid #ccc
+  .simpleCart_items th 
+    color: #333
+    text-align: left
+    padding: 10px 30px
+    border-bottom: 1px solid #ccc
+    background: #ededed
+  .simpleCart_items td
+    color: #333
+    text-align: left
+    padding: 10px 30px
+    border-bottom: 1px solid #ccc
+  .item-quantity input
+    width: 30px
+    text-align: center
 .item-name
   width: 65%
 .item-price
@@ -388,10 +413,10 @@ classBackground()
   div
     float:left
     text-align: left
-.simpleCart_decrement, .simpleCart_increment, .simpleCart_remove
-  display: none
+/*.simpleCart_decrement, .simpleCart_increment, .simpleCart_remove
+  display: none*/
 .cartFiller
-  width: 65%
+  width: 59%
   float: left
   height: 1em
 .simpleCart_total

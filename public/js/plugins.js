@@ -12,10 +12,10 @@ $(document).ready(function(){
 });
 // Shopping Cart toggle
 $('#shopping').bind('click', function(){
-  $('#fade').fadeIn(1000)
+  $('#fade').fadeIn(300)
 });
 $('#xbutton').bind('click', function(){
-  $('#fade').fadeOut(1000)
+  $('#fade').fadeOut(300)
 });
 $('.item_add').click(
   function(){$('#shopping').addClass('animated tada')}
