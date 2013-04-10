@@ -48,9 +48,30 @@ $dipietrofonts = 'Helvetica Neue',Helvetica,Arial,sans-serif
 $contentBlockWidth = 60em
 $headerHeight = 11.25em
 $footerHeight = 4.375em
+$checkoutWidth = 600px
 @font-face { font-family: Blair; src: url('../343.ttf'); } 
-
-// General Background Mixins
+body
+  background-color: #000
+  font-family: $dipietrofonts
+  background-image: url('../img/wood.png')
+  background-size: cover
+  background-attachment: fixed
+header
+  width: 100%
+  height: $headerHeight
+  #logo
+    width: 42.5em
+    height: 9.6em
+    margin: auto
+    margin-top: 1.25em
+    background-image: url('../img/logo.png')
+    background-size: cover
+    background-repeat: none
+    animation-delay: 0.5s
+#shopping
+  position: fixed
+  top: 1%
+  right: 1%
 pictureBackground(n)
   width: $contentBlockWidth
   margin: auto
@@ -73,12 +94,9 @@ whiteBackground(n)
     height: n
     width: $contentBlockWidth
     margin: auto
-body
-  background-color: #000
-  font-family: $dipietrofonts
-  background-image: url('../img/wood.png')
-  background-size: cover
-  background-attachment: fixed
+/* ==========================================================================
+   Lightbox classes
+   ========================================================================== */
 .blackOverlay
   position: fixed
   top: 0
@@ -107,7 +125,6 @@ body
       p
         margin-top: 3em
         font: 100 1.5em 'Josefin Slab', serif
-        
 #xbutton
   width: 2em
   height: 2em
@@ -120,22 +137,6 @@ body
   -moz-background-size: cover
   -o-background-size: cover
   z-index:  1009
-#shopping
-  position: fixed
-  top: 1%
-  right: 1%
-header
-  width: 100%
-  height: $headerHeight
-  #logo
-    width: 42.5em
-    height: 9.6em
-    margin: auto
-    margin-top: 1.25em
-    background-image: url('../img/logo.png')
-    background-size: cover
-    background-repeat: none
-    animation-delay: 0.5s
 /* ==========================================================================
    Navigation
    ========================================================================== */
@@ -293,18 +294,14 @@ header
       position: relative
 /* ==========================================================================
    Class Mixin
-   ========================================================================== */    
-$checkoutWidth = 600px
-classBackground(n)
+   ========================================================================== */
+classBackground()
   width: $contentBlockWidth
   margin: auto
   text-align: center
-  background: url(n)
-  height: 90em
   background-size: cover
   .container
     width: $contentBlockWidth
-    height: 90em
     margin: auto
     background: rgba(0,0,0,0.85)
     #fade
@@ -334,14 +331,16 @@ classBackground(n)
             margin-top: 1em
             width: 18em
     .classes
-      margin: 0.5em auto
+      margin: auto
+      margin-bottom: 2em
       width: 800px
+      height: 300px
       .thumbs
         width: 200px
         height: 300px
         float: left
       .details
-        width: 35em
+        width: 580px
         height: 300px
         float: left
         margin: 0 0 0 1em
@@ -357,6 +356,19 @@ classBackground(n)
           font 100 1em $dipietrofonts
         h3
           color: #666
+          float: left
+        input
+          float: right
+          margin: 1em
+#cut
+    classBackground('../img/about.jpg')
+#color
+    classBackground('../img/about.jpg')
+#etc
+    classBackground('../img/about.jpg')          
+/* ======================================================================
+   Shopping Cart
+   ======================================================================*/
 .item-name
   width: 65%
 .item-price
@@ -390,16 +402,6 @@ classBackground(n)
   width: 25%
   float: left
   text-align: left
-// CUT
-#cut
-    classBackground('../img/about.jpg')
-// COLOR
-#color
-    classBackground('../img/about.jpg')
-// ETC
-#etc
-    classBackground('../img/about.jpg') // TODO: format that image
-    
 /* ======================================================================
    About Styles
    ======================================================================*/
