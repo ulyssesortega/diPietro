@@ -53,7 +53,7 @@ $checkoutWidth = 600px
 body
   background-color: #000
   font-family: $dipietrofonts
-  background-image: url('../img/wood.png')
+  background-image: url('../img/wood.jpg')
   background-size: cover
   background-attachment: fixed
 header
@@ -80,18 +80,18 @@ header
   a
     float: left
     margin-left: 1em
-pictureBackground(n)
-  width: $contentBlockWidth
+pictureBackground()
+  width: 100%
   margin: auto
   text-align: center
   background: url('../img/about.jpg')
-  height: n
+  height: auto
   background-size: cover
   .container
-    width: $contentBlockWidth
-    height: 90em
+    width: 100%
+    height: auto
     margin: auto
-    background: rgba(0,0,0,0.85)
+    background: rgba(0,0,0,0.7)
     overflow: scroll
 whiteBackground(n)
   width: 100%
@@ -187,15 +187,15 @@ whiteBackground(n)
     right: 0.625em
     bottom: 0.625em
   #first
-    background-image: url('../img/main1.png')
+    background-image: url('../img/main1.jpg')
   #second
-    background-image: url('../img/main2.png')
+    background-image: url('../img/main2.jpg')
   #third
-    background-image: url('../img/main3.png')
+    background-image: url('../img/main3.jpg')
   #fifth
-    background-image: url('../img/main4.png')
+    background-image: url('../img/main4.jpg')
   #fourth
-    background-image: url('../img/main5.png')
+    background-image: url('../img/main5.jpg')
 
 #featured
   width: $contentBlockWidth
@@ -216,11 +216,11 @@ whiteBackground(n)
       margin-bottom: 4em
       animation-delay: 0s
     #feature1
-      background-image: url('../img/cut_thumb.png')
+      background-image: url('../img/cut_thumb.jpg')
     #feature2
-      background-image: url('../img/color_thumb.png')
+      background-image: url('../img/color_thumb.jpg')
     #feature3
-      background-image: url('../img/etc_thumb.png')
+      background-image: url('../img/etc_thumb.jpg')
 
 /* ======================================================================
    Classes Styles
@@ -254,32 +254,36 @@ whiteBackground(n)
       bottom: 2em
       right: 1.25em
   #cut
-    background-image: url('../img/cut.png')
+    background-image: url('../img/cut.jpg')
   #color
-    background-image: url('../img/color.png')
+    background-image: url('../img/color.jpg')
   #etc
-    background-image: url('../img/etc.png')
+    background-image: url('../img/etc.jpg')
 /* ======================================================================
    FAQ
    ======================================================================*/
 #FAQ
     pictureBackground(90em)
-    h2
-      font: 100 2em "Josefin"
-      color: #fff
-      text-align: center
-    h3 
-      font: 100 1.2em 'Arvo'
-      color: #fff
+    #frequently
+      width: $contentBlockWidth
       margin: auto
-      margin-top: 1em
-      width: 45em
-    p
-      font: 200 0.9em $dipietrofonts
-      color: #ccc
-      margin: auto
-      margin-top: 1em
-      width: 45em
+      h2
+        font: 100 2em "Josefin"
+        color: #fff
+        text-align: center
+      h3 
+        font: 100 1.5em 'Arvo'
+        color: #999
+        text-align: left
+        margin-top: 1em
+        width: 30em
+      p
+        font: 200 0.9em $dipietrofonts
+        text-align: left
+        color: #fff
+        margin-top: 1em
+        margin-left: 1em
+        width: 60em
 /* ==================================================================== 
   In Salon
   ======================================================================*/
@@ -295,7 +299,7 @@ whiteBackground(n)
       width: 40em
       margin: auto
     .insalon
-      background: url('../img/insalon.png')
+      background: url('../img/insalon.jpg')
       width: 40.9375em
       height: 26.5625em
       margin: auto
@@ -447,18 +451,21 @@ classBackground(n)
    About Styles
    ======================================================================*/
 #aboutUs
-    pictureBackground(90em)
-    img
-      float: left
-      margin: 0 1em
-    h2
-      font: italic small-caps 100 2em "Arvo"
-      color: #fff
-      margin: 1em 
-    p
-      font: 100 1.0em "Arvo"
-      color: #ccc
-      margin: 1em
+    pictureBackground()
+    #academy
+      width: $contentBlockWidth
+      margin: auto
+      img
+        float: left
+        margin: 0 1em
+      h2
+        font: italic small-caps 100 2em "Arvo"
+        color: #fff
+        margin: 1em 
+      p
+        font: 100 1.0em "Arvo"
+        color: #ccc
+        margin: 1em
 
 /* ======================================================================
    Educators  Styles
@@ -497,27 +504,27 @@ classBackground(n)
         opacity: 0.75
         bottom: -1px
     #shelley
-      background-image:url('../img/teachers_thumbs/shelley.png')
+      background-image:url('../img/teachers_thumbs/shelley.jpg')
     #amita
-      background-image:url('../img/teachers_thumbs/amita.png')
+      background-image:url('../img/teachers_thumbs/amita.jpg')
     #cares
-      background-image:url('../img/teachers_thumbs/cares.png')
+      background-image:url('../img/teachers_thumbs/cares.jpg')
     #debi
-      background-image:url('../img/teachers_thumbs/debi.png')  
+      background-image:url('../img/teachers_thumbs/debi.jpg')  
     #jay
-      background-image:url('../img/teachers_thumbs/jay.png')  
+      background-image:url('../img/teachers_thumbs/jay.jpg')  
     #moises
-      background-image:url('../img/teachers_thumbs/moises.png')  
+      background-image:url('../img/teachers_thumbs/moises.jpg')  
     #emily
-      background-image:url('../img/teachers_thumbs/emily.png')  
+      background-image:url('../img/teachers_thumbs/emily.jpg')  
     #ali
-      background-image:url('../img/teachers_thumbs/ali.png')  
+      background-image:url('../img/teachers_thumbs/ali.jpg')  
     #brian
-      background-image:url('../img/teachers_thumbs/brian.png')  
+      background-image:url('../img/teachers_thumbs/brian.jpg')  
     #yureesh
-      background-image:url('../img/teachers_thumbs/yureesh.png')  
+      background-image:url('../img/teachers_thumbs/yureesh.jpg')  
     #renee
-      background-image:url('../img/teachers_thumbs/renee.png')  
+      background-image:url('../img/teachers_thumbs/renee.jpg')  
 
 /* ======================================================================
    Contact Styles
