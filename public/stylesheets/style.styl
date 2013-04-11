@@ -313,36 +313,9 @@ classBackground(n)
     width: 100%
     margin: auto
     background: rgba(0,0,0,0.65)
-    #fade
-      #checkout
-        width: 90%
-        background: rgba(255,255,255,0.75)
-        height: 65%
-        margin: auto
-        margin-top: 7em
-        background-color: rgba(255,255,224,1)
-        z-index: 1002
-        position: relative
-        border-radius: 25px
-        text-align: center
-        h1
-          font: small-caps 100 2em 'Arvo'
-          color: #222
-          padding-top: 2em
-        #shoppingCart
-          width: 63%
-          margin-left: 2%
-          float: left
-          height: 1em
-        form
-          width: 35%
-          float: left
-          input
-            margin-top: 1em
-            width: 18em
     .classes
       margin: auto
-      margin-bottom: 2em
+      padding: 1em
       width: 800px
       height: 300px
       background: rgba(0,0,0,0.2)
@@ -350,6 +323,11 @@ classBackground(n)
         width: 200px
         height: 300px
         float: left
+        display: table
+        img.verticalAlign
+          vertical-align: middle
+          display: table-cell
+          margin-top: 30px
       .details
         width: 580px
         height: 300px
@@ -435,6 +413,36 @@ classBackground(n)
   width: 100%
   float: right
   text-align: right
+/* ======================================================================
+   Checkout
+   ======================================================================*/
+#fade
+  #checkout
+    width: 90%
+    background: rgba(255,255,255,0.75)
+    height: 65%
+    margin: auto
+    margin-top: 7em
+    background-color: rgba(255,255,224,1)
+    z-index: 1002
+    position: relative
+    border-radius: 25px
+    text-align: center
+    h1
+      font: small-caps 100 2em 'Arvo'
+      color: #222
+      padding-top: 2em
+    #shoppingCart
+      width: 63%
+      margin-left: 2%
+      float: left
+      height: 1em
+    form
+      width: 35%
+      float: left
+      input
+        margin-top: 1em
+        width: 18em
 /* ======================================================================
    About Styles
    ======================================================================*/
