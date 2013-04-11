@@ -303,15 +303,16 @@ whiteBackground(n)
 /* ==========================================================================
    Class Mixin
    ========================================================================== */
-classBackground()
-  width: $contentBlockWidth
+classBackground(n)
+  width: 100%
   margin: auto
   text-align: center
+  background: url(n)
   background-size: cover
   .container
-    width: $contentBlockWidth
+    width: 100%
     margin: auto
-    background: rgba(0,0,0,0.85)
+    background: rgba(0,0,0,0.65)
     #fade
       #checkout
         width: 90%
@@ -344,6 +345,7 @@ classBackground()
       margin-bottom: 2em
       width: 800px
       height: 300px
+      background: rgba(0,0,0,0.2)
       .thumbs
         width: 200px
         height: 300px
@@ -362,7 +364,7 @@ classBackground()
           font: italic small-caps 100 1.1em "Josefin"
         p
           color: #ccc
-          font 100 1em $dipietrofonts
+          font 200 1em $dipietrofonts
         h3
           color: #666
           float: left
@@ -370,11 +372,11 @@ classBackground()
           float: right
           margin: 1em
 #cut
-    classBackground('../img/about.jpg')
+    classBackground('../img/cutBackground.jpg')
 #color
-    classBackground('../img/about.jpg')
+    classBackground('../img/colorBackground.jpg')
 #etc
-    classBackground('../img/about.jpg')          
+    classBackground('../img/etcBackground.jpg')          
 /* ======================================================================
    Shopping Cart
    ======================================================================*/
@@ -396,11 +398,17 @@ classBackground()
     text-align: center
 .item-name
   width: 65%
+  text-align: left
 .item-price
-  width: 25%
+  width: 12.5%
+  text-align: center
 .item-quantity
   width: 10%
+  text-align: center
 .item-total
+  width: 12.5%
+  text-align: right
+.item-image
   display: none
 .headerRow
   width: $checkoutWidth
@@ -420,13 +428,13 @@ classBackground()
   float: left
   height: 1em
 .simpleCart_total
-  width: 25%
-  float: left
-  text-align: left
+  float: right
+  width: 100%
+  text-align: right
 .simpleCart_grandTotal
-  width: 25%
-  float: left
-  text-align: left
+  width: 100%
+  float: right
+  text-align: right
 /* ======================================================================
    About Styles
    ======================================================================*/

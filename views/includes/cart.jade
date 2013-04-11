@@ -2,16 +2,13 @@
   #checkout
     #xbutton
     h1 Review You Shopping Cart
-    #shoppingCart
+    #shoppingCart.clearfix
       .simpleCart_items
         div
           .itemRow
             input.item-quantity
-      .cartFiller
-      span#simpleCart_total.simpleCart_total.clearfix
-      .cartFiller
-      #simpleCart_grandTotal.simpleCart_grandTotal.clearfix
-      .cartFiller
+      #simpleCart_total.simpleCart_total
+      #simpleCart_grandTotal.simpleCart_grandTotal
     form(action="", method="get")
       input(name="First Last Name", placeholder="First Last Name")
       input(name="Address Line 1", placeholder="Address Line 1")
