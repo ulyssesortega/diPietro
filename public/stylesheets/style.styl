@@ -393,13 +393,11 @@ classBackground(n)
 .item-image
   display: none
 .headerRow
-  width: $checkoutWidth
   height: 2em
   text-align: left
   div
     float: left
 .itemRow
-  width: $checkoutWidth
   div
     float:left
     text-align: left
@@ -422,7 +420,7 @@ classBackground(n)
    ======================================================================*/
 #fade
   #checkout
-    width: 90%
+    width: 70%
     background: rgba(255,255,255,0.75)
     height: 85%
     margin: auto
@@ -437,16 +435,23 @@ classBackground(n)
       color: #222
       padding-top: 2em
     #shoppingCart
-      width: 63%
+      height: 20em
+      overflow: scroll
+      width: 90%
+      margin-top: 2em
       margin-left: 2%
       float: left
-      height: 1em
     form
-      width: 35%
+      width: 100%
       float: left
+      fieldset
+        padding:0
       input
         margin-top: 1em
-        width: 18em
+        width: 75%
+      .form1, .form2
+        float:left
+        width: 50%
 /* ======================================================================
    About Styles
    ======================================================================*/

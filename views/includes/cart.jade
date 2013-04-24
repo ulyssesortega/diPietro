@@ -1,25 +1,28 @@
 #fade.blackOverlay(style="display:none")
   #checkout
     .xbutton
-    h1 Review You Shopping Cart
     #shoppingCart.clearfix
       .simpleCart_items
-        div
+        div(style="clear:both")
           .itemRow
             input.item-quantity
       #simpleCart_total.simpleCart_total
       #simpleCart_grandTotal.simpleCart_grandTotal
-    form(action="", method="get")
-      input(id="firstName", placeholder="First Name", required)
-      input(id="lastName", placeholder="Last Name", required)
-      input(id="clientEmail", placeholder="Your Email", type="email", required)
-      input(id="address1", placeholder="Address Line 1", required)
-      input(id="address2", placeholder="Address Line 2")
-      input(id="clientCity", placeholder="Billing City", required)
-      input(id="clientState", placeholder="Billing State", max="2", required)
-      input(id="clientZip", placeholder="Billing Zip Code", max="5", required)
-      input(id="clientTel", placeholder="telephone", required)
-      input(id="clientCC", placeholder="Credit Card", required)
-      input(id="expiration", placeholder="12/12/13", required)
-      input(id="clientCode", placeholder="security code", max="3", required)
-      input#authorizeCo(type="button", value="checkout", required) Checkout
+    div(style="clear:both")
+    form(action="/checkout", method="post")
+      div.form1
+        input(id="firstName", placeholder="First Name", required)
+        input(id="lastName", placeholder="Last Name", required)
+        input(id="address1", placeholder="Address Line 1", required)
+        input(id="address2", placeholder="Address Line 2")
+        input(id="clientCity", placeholder="Billing City", required)
+        input(id="clientState", placeholder="Billing State", max="2", required)
+        input(id="clientZip", placeholder="Billing Zip Code", max="5", required)
+      div.form2
+        input(id="clientCC", placeholder="Credit Card", required)
+        input(id="expiration", placeholder="12/12/13", required)
+        input(id="clientCode", placeholder="security code", max="3", required)
+        input(id="clientTel", placeholder="telephone", required)
+        input(id="clientEmail", placeholder="Your Email", type="email", required)
+        input#authorizeCo(type="submit", value="checkout", required) Checkout
+      

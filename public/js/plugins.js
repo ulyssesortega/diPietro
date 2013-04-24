@@ -36,18 +36,19 @@ $('.footerContainer footer ul li').hover(
 );
 
 $('#authorizeCO').bind("click", function(e) {
-  var creditCard = $('#clientCC').val();
-  var creditExp = $('#expiration').val();
-  var grandTotal = $('#simpleCart_grandTotal').val();
-  var clientEmail = $('#clientEmail').val(); 
-  var firstName = $('#firstName').val();
-  var lastName = $('#lastName').val();
-  var clientCity = $('#clientCity').val();
-  var creditZip = $('#clientZip').val();
-  var clientState = $('#clientState').val();
-  var clientTel = $('#clientTel').val();
-  var address1 = $('#address1').val();
-  var address2 = $('#address2').val();
+  var creditCard = $('#clientCC');
+  var creditExp = $('#expiration');
+  var grandTotal = $('#simpleCart_grandTotal');
+  var clientEmail = $('#clientEmail'); 
+  var firstName = $('#firstName');
+  var lastName = $('#lastName');
+  var clientCity = $('#clientCity');
+  var creditZip = $('#clientZip');
+  var clientState = $('#clientState');
+  var clientTel = $('#clientTel');
+  var address1 = $('#address1');
+  var address2 = $('#address2');
+  
 });
 $('.teacher').click(function(e){
   var teacher = $(this).clone();
