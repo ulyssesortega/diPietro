@@ -1,6 +1,6 @@
 #fade.blackOverlay(style="display:none")
   #checkout
-    #xbutton
+    .xbutton
     h1 Review You Shopping Cart
     #shoppingCart.clearfix
       .simpleCart_items
@@ -10,10 +10,16 @@
       #simpleCart_total.simpleCart_total
       #simpleCart_grandTotal.simpleCart_grandTotal
     form(action="", method="get")
-      input(name="First Last Name", placeholder="First Last Name")
-      input(name="Address Line 1", placeholder="Address Line 1")
-      input(name="Address Line 2", placeholder="Address Line 2")
-      input(name="city", placeholder="City")
-      input(name="state", placeholder="State", max="2")
-      input(name="zip", placeholder="Zip Code", max="5")
-      input.simpleCart_checkout(type="submit", value="checkout") Checkout
+      input(id="firstName", placeholder="First Name", required)
+      input(id="lastName", placeholder="Last Name", required)
+      input(id="clientEmail", placeholder="Your Email", type="email", required)
+      input(id="address1", placeholder="Address Line 1", required)
+      input(id="address2", placeholder="Address Line 2")
+      input(id="clientCity", placeholder="Billing City", required)
+      input(id="clientState", placeholder="Billing State", max="2", required)
+      input(id="clientZip", placeholder="Billing Zip Code", max="5", required)
+      input(id="clientTel", placeholder="telephone", required)
+      input(id="clientCC", placeholder="Credit Card", required)
+      input(id="expiration", placeholder="12/12/13", required)
+      input(id="clientCode", placeholder="security code", max="3", required)
+      input#authorizeCo(type="button", value="checkout", required) Checkout
