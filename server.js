@@ -1,5 +1,7 @@
 var app, compile, config, express, nib, routes, stylus, fs, im;
 express = require("express");
+var https = require('https');
+var http = require('http');
 routes = require("./routes/site.js");
 config = require("./config/config.js");
 nib = require("nib");
@@ -7,6 +9,11 @@ stylus = require("stylus");
 app = express();
 fs = require('fs');
 im = require('imagemagick');
+
+var options = {
+    key: fs.readFileSync('privatekey.pem'),
+    cert: fs.readFileSync('certificate.pem')
+};
 
 compile = function(str, path) {
   return stylus(str).set("filename", path).set("compress", false).use(nib()).import("nib");
@@ -52,5 +59,7 @@ app.get("/etc", routes.etc);
 app.get("/color", routes.color);
 app.get("*", routes.error);
 
-app.listen(config.port);
+http.createServer(app).listen(config.port);
+https.createServer(options, app).listen(443);
+
 console.log("Server started on port " + config.port + " in " + app.get('env') + " mode");
