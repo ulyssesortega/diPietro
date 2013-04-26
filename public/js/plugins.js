@@ -34,22 +34,6 @@ $('.footerContainer footer ul li').hover(
 	function(){$(this).addClass('animated pulse')},
 	function(){$(this).removeClass('animated pulse')}
 );
-
-$('#authorizeCO').bind("click", function(e) {
-  var creditCard = $('#clientCC');
-  var creditExp = $('#expiration');
-  var grandTotal = $('#simpleCart_grandTotal');
-  var clientEmail = $('#clientEmail'); 
-  var firstName = $('#firstName');
-  var lastName = $('#lastName');
-  var clientCity = $('#clientCity');
-  var creditZip = $('#clientZip');
-  var clientState = $('#clientState');
-  var clientTel = $('#clientTel');
-  var address1 = $('#address1');
-  var address2 = $('#address2');
-  
-});
 $('.teacher').click(function(e){
   var teacher = $(this).clone();
   console.log(teacher);
