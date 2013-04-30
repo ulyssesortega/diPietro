@@ -21,13 +21,13 @@ block content
           img.item_thumb(src="img/cut_thumbs/Create.png", width="200", alt="")
         .details
           h1.item_name CREATE/CREATIVE CUTTING
-          select 
-            option(name='1') June 2
-            option(name='2') Oct 20
           p Take a break from the norm, get inspired and allow your creativity to come to life. Find, interpret, and execute your own artistic vision. Explore various techniques that will enable you to combine current trends with your individual creative expression.
           h3.item_price $525
           form(name='PrePage', method='post', action='https://Simplecheckout.authorize.net/payment/CatalogPayment.aspx')
-            input(type='hidden', name='LinkId', value1='4ad5c5c6-bef4-4dc7-af68-e0799cd96ebc', value2='9b9efba2-1441-499b-b2dd-9b03fe23a9dd')
+            select
+              option(name='1') June 2
+              option(name='2') Oct 20
+            input(type='hidden', name='LinkId', value='', value1='4ad5c5c6-bef4-4dc7-af68-e0799cd96ebc', value2='9b9efba2-1441-499b-b2dd-9b03fe23a9dd')
             input(type='submit', value='Buy Now!')
 
       .classes.simpleCart_shelfItem
