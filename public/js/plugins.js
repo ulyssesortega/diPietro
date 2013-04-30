@@ -41,3 +41,16 @@ $('.teacher').click(function(e){
   $('#blank.light').append(teacher);
 
 });
+$(".details select").change(function (e) {
+  var val1 = $(e.target ~ input[type='hidden']).attr("value1")
+  var val2 = $(e.target ~ input[type='hidden']).attr("value2")
+  var val3 = $(e.target ~ input[type='hidden']).attr("value3")
+  var optionName = $(e).attr("name");
+  if( optionName == '2'){
+    $(e.target ~ input[type='hidden']).attr("value") = val2;
+  }  else if(optionName == '1'){
+    $(e.target ~ input[type='hidden']).attr("value") = val1;
+  }  else if(optionName == '3'){
+    $(e.target ~ input[type='hidden']).attr("value") = val3;
+  }
+});
