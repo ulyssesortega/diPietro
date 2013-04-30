@@ -2,9 +2,16 @@ server {
         listen       80;
         server_name  dipietrotoddacademy.com www.dipietrotoddacademy.com *.dipietrotoddacademy.com;
         root /usr/share/nginx/html;
-        location ~ ^/(images/|img/|javascript/|js/|css/|stylesheets/|media/|static/|robots.txt|humans.txt) {
+        location ~ ^/(images/|img/|javascript/|js/|css/|343.ttf|stylesheets/|media/|static/|robots.txt|humans.txt) {
           access_log off;
           expires max;
+        }
+        location ~ \.php$ {
+                try_files $uri =404;
+                fastcgi_split_path_info ^(.+\.php)(/.+)$;
+	        fastcgi_pass unix:/tmp/php5-fpm.sock;
+                fastcgi_index index.php;
+                include fastcgi_params;
         }
         location / {
               proxy_redirect off;

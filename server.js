@@ -28,7 +28,7 @@ app.configure(function() {
     compile: compile
   }));
   app.enable('trust proxy');
-  app.use(express["static"](__dirname + "/public")); // Should be commented out when deployed with Nginx serving static files
+  //app.use(express["static"](__dirname + "/public")); // Should be commented out when deployed with Nginx serving static files
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
