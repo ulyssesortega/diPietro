@@ -1,10 +1,4 @@
 $(document).ready(function(){
-  $("input[value='']").each(function(){
-    var set = $(this).attr("value1");
-    $(this).attr("value", set);
-    console.log(set);
-  });
-  $(this).next().attr("value", val1);
 	// Index Page Slideshow
 	$(function() {
   		$("#slideshow > div:gt(0)").hide();
@@ -47,7 +41,13 @@ $('.teacher').click(function(e){
   $('#blank.light').append(teacher);
 
 });
-
+$(document).ready(function(){
+    $("#cut input[value='']").each(function(){
+        var set = $(this).attr("value1");
+        $(this).attr("value", set);
+        console.log(set);
+    });
+});
 $(".details select").change(function (e) {
     var val1 = $(this).next().attr("value1");
     var val2 = $(this).next().attr("value2");
