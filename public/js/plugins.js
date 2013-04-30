@@ -1,4 +1,10 @@
 $(document).ready(function(){
+  $("input[value='']").each(function(){
+    var set = $(this).attr("value1");
+    $(this).attr("value", set);
+    console.log(set);
+  });
+  $(this).next().attr("value", val1);
 	// Index Page Slideshow
 	$(function() {
   		$("#slideshow > div:gt(0)").hide();
@@ -41,17 +47,19 @@ $('.teacher').click(function(e){
   $('#blank.light').append(teacher);
 
 });
+
 $(".details select").change(function (e) {
     var val1 = $(this).next().attr("value1");
     var val2 = $(this).next().attr("value2");
     var val3 = $(this).next().attr("value3");
-    var optionName = $(this).attr("name");
-    console.log(val1 + ', ' + val2 + ', ' + val3 + ', ' + optionName + this);
-    if( optionName == '2'){
-	$(e.target.next()).attr("value") = val2;
-    }  else if(optionName == '1'){
-        $(e.target.next()).attr("value") = val3;
-    }  else if(optionName == '3'){
-        $(e.target.next()).attr("value") = val3;
+    var val4 = $("option:selected", this).attr("name");
+
+    console.log(val1 + ', ' + val2 + ', ' + val3 + ', ' + val4 + this);
+    if( val4 == '2'){
+	    $(this).next().attr("value", val2);
+    }  else if(val4 == '1'){
+    	$(this).next().attr("value", val1);
+    }  else if(val4 == '3'){
+    	$(this).next().attr("value", val3);
     }
 });
