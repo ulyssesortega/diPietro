@@ -42,24 +42,14 @@ $('.teacher').click(function(e){
 
 });
 $(document).ready(function(){
-    $("#cut input[value='']").each(function(){
-        var set = $(this).attr("value1");
-        $(this).attr("value", set);
-        console.log(set);
+    $("input[type='hidden']").each(function(){
+      var prev = $(this).prev()
+      var val =$("option:selected", prev).attr("value");
+      $(this).attr("value", val);
+      console.log(val);
     });
 });
 $(".details select").change(function (e) {
-    var val1 = $(this).next().attr("value1");
-    var val2 = $(this).next().attr("value2");
-    var val3 = $(this).next().attr("value3");
-    var val4 = $("option:selected", this).attr("name");
-
-    console.log(val1 + ', ' + val2 + ', ' + val3 + ', ' + val4 + this);
-    if( val4 == '2'){
-	    $(this).next().attr("value", val2);
-    }  else if(val4 == '1'){
-    	$(this).next().attr("value", val1);
-    }  else if(val4 == '3'){
-    	$(this).next().attr("value", val3);
-    }
+    var val = $("option:selected", this).attr("value");
+    $(this).next().attr("value", val);
 });
