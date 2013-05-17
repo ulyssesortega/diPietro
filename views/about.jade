@@ -11,9 +11,8 @@ block content
           |The diPietro Todd Academy explores the process of learning and the development of ideas. The Academy conducts seminars and demonstrations designed specifically to reach all aspects of cutting, color, and styling while giving students practical knowledge of the beauty industry.  
         p
           | The Academy is built upon the understanding that creativity comes second to a strong foundation. We hope to inspire seasoned veterans of the hair industry while customizing coursework to reach different learning styles and ideas.  It allows experienced stylists the opportunity to hone their skills in specifically designed workshops. 
-        
-        video(width='960', height='540', controls='controls')
-          source(src='img/originals/DPT.mov', type='video/mov')
-            source(src='movie.ogg', type='video/ogg') // Don't have ogg
-              | Your browser does not support the video tag.
+        video(width='960', height='540', id="walkingVideo", preload="auto", autoplay="true", loop="loop", muted volume="0")
+          source(src="img/DPT.mp4", type='video/mp4', codecs="avc1.42E01E, mp4a.40.2")
+          source(src="img/walkers.ogv", type="video/ogg ogv", codecs="theora, vorbis")
+          p Your Browser doesn't support video'
         
